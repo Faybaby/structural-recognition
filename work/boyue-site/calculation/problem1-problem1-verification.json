@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "layers": {
+    "odd": {
+      "nodes": 645,
+      "nativeFaceErrors": [],
+      "floorCoveragePending": [],
+      "sourceUnchanged": true,
+      "yangNodes": 208,
+      "netHeights": [
+        1000,
+        2900
+      ],
+      "rods": 583,
+      "rodCollisions": 0,
+      "windowFootings": 91
+    },
+    "even": {
+      "nodes": 674,
+      "nativeFaceErrors": [],
+      "floorCoveragePending": [],
+      "sourceUnchanged": true,
+      "yangNodes": 210,
+      "netHeights": [
+        1000,
+        2900
+      ],
+      "rods": 582,
+      "rodCollisions": 0,
+      "windowFootings": 91
+    }
+  },
+  "pairs": 569,
+  "pairErrors": []
+}

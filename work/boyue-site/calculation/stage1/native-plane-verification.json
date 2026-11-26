@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "nativeFaces": 133,
+  "logicalBeams": 115,
+  "rebateMerges": 18,
+  "rebateFeatures": 62,
+  "circledBeam": "even/PB002",
+  "circledOriginalRegions": 15,
+  "circledLevels": [
+    2430.0,
+    2450.0
+  ],
+  "checks": [
+    "drawing seam does not split native rectangle",
+    "collinear segments are one continuous route",
+    "line arc line is one continuous route using exact arc length",
+    "T branch is three internal routes within one plane",
+    "all group footprints are exact native unions",
+    "one native face has only one logical beam",
+    "every rebate merge has current DWG handle and native contact",
+    "actual source heights retained"
+  ]
+}

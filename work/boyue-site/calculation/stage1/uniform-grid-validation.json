@@ -1,0 +1,325 @@
+{
+  "mode": "actual-long-support-first-per-layer",
+  "thresholdMm": 3200,
+  "thresholdComparison": ">",
+  "defaultPitchMm": 1200,
+  "testedAdditionalPitchMm": 1000,
+  "sourceInputsUnchanged": true,
+  "summary1200": {
+    "originalPositions": 1582,
+    "alignedPositions": 1601,
+    "addedPoles": 61,
+    "removedPoles": 42,
+    "moved": 314,
+    "high": 94,
+    "formed": 48,
+    "partial": 32,
+    "isolated": 14,
+    "poles": 343,
+    "rods": 794,
+    "cells": 198,
+    "cancelled": 8,
+    "sizes": [
+      {
+        "size": 1200,
+        "count": 607
+      },
+      {
+        "size": 1100,
+        "count": 12
+      },
+      {
+        "size": 1050,
+        "count": 4
+      },
+      {
+        "size": 1000,
+        "count": 34
+      },
+      {
+        "size": 950,
+        "count": 2
+      },
+      {
+        "size": 890,
+        "count": 4
+      },
+      {
+        "size": 875,
+        "count": 5
+      },
+      {
+        "size": 850,
+        "count": 4
+      },
+      {
+        "size": 800,
+        "count": 23
+      },
+      {
+        "size": 725,
+        "count": 18
+      },
+      {
+        "size": 700,
+        "count": 2
+      },
+      {
+        "size": 675,
+        "count": 2
+      },
+      {
+        "size": 650,
+        "count": 7
+      },
+      {
+        "size": 625,
+        "count": 16
+      },
+      {
+        "size": 600,
+        "count": 26
+      },
+      {
+        "size": 550,
+        "count": 6
+      },
+      {
+        "size": 475,
+        "count": 3
+      },
+      {
+        "size": 400,
+        "count": 5
+      },
+      {
+        "size": 350,
+        "count": 8
+      },
+      {
+        "size": 325,
+        "count": 2
+      },
+      {
+        "size": 250,
+        "count": 3
+      },
+      {
+        "size": 125,
+        "count": 1
+      }
+    ],
+    "attempts": 122,
+    "collisionChecks": 802,
+    "originalRods": 0,
+    "originalCells": 0,
+    "affectedRegions": 122,
+    "coreRegions": 28,
+    "neighborRegions": 94,
+    "triggerLines": 93,
+    "unchangedLayers": [
+      "L1",
+      "L2"
+    ],
+    "components": 4,
+    "pendingRegions": 2,
+    "assemblyConflicts": 34,
+    "receiverReview": 37
+  },
+  "summary1000": {
+    "originalPositions": 1582,
+    "alignedPositions": 1666,
+    "addedPoles": 101,
+    "removedPoles": 17,
+    "moved": 333,
+    "high": 95,
+    "formed": 36,
+    "partial": 47,
+    "isolated": 12,
+    "poles": 409,
+    "rods": 970,
+    "cells": 244,
+    "cancelled": 2,
+    "sizes": [
+      {
+        "size": 1000,
+        "count": 832
+      },
+      {
+        "size": 975,
+        "count": 6
+      },
+      {
+        "size": 900,
+        "count": 8
+      },
+      {
+        "size": 850,
+        "count": 2
+      },
+      {
+        "size": 825,
+        "count": 4
+      },
+      {
+        "size": 800,
+        "count": 4
+      },
+      {
+        "size": 790,
+        "count": 4
+      },
+      {
+        "size": 775,
+        "count": 1
+      },
+      {
+        "size": 750,
+        "count": 4
+      },
+      {
+        "size": 700,
+        "count": 40
+      },
+      {
+        "size": 675,
+        "count": 7
+      },
+      {
+        "size": 650,
+        "count": 9
+      },
+      {
+        "size": 625,
+        "count": 2
+      },
+      {
+        "size": 600,
+        "count": 21
+      },
+      {
+        "size": 550,
+        "count": 4
+      },
+      {
+        "size": 450,
+        "count": 4
+      },
+      {
+        "size": 400,
+        "count": 2
+      },
+      {
+        "size": 375,
+        "count": 1
+      },
+      {
+        "size": 350,
+        "count": 2
+      },
+      {
+        "size": 325,
+        "count": 3
+      },
+      {
+        "size": 300,
+        "count": 2
+      },
+      {
+        "size": 225,
+        "count": 2
+      },
+      {
+        "size": 150,
+        "count": 4
+      },
+      {
+        "size": 125,
+        "count": 2
+      }
+    ],
+    "attempts": 122,
+    "collisionChecks": 972,
+    "originalRods": 0,
+    "originalCells": 0,
+    "affectedRegions": 122,
+    "coreRegions": 28,
+    "neighborRegions": 94,
+    "triggerLines": 93,
+    "unchangedLayers": [
+      "L1",
+      "L2"
+    ],
+    "components": 4,
+    "pendingRegions": 4,
+    "assemblyConflicts": 32,
+    "receiverReview": 38
+  },
+  "originalBaseline": {
+    "positions": 1582,
+    "rods": 31,
+    "restorationVerified": true
+  },
+  "triggerAuditCount": 93,
+  "coreLayerScopeVerified": true,
+  "nativeChecks": {
+    "floor": {
+      "passed": true,
+      "upwardReceivingFacesOnly": true,
+      "mismatches": [],
+      "nativeOrdinaryFacePointReferences": 651,
+      "nearestNativeLandings": 463,
+      "noIntersectionVerified": 188,
+      "maxHeightErrorMm": 4.547473508864641e-13,
+      "indexSource": "user uniform spacing 1200mm for marked regions; original XLSX for others",
+      "geometrySnapshot": "loaded original STEP snapshot, unchanged"
+    },
+    "ordinary": {
+      "passed": true,
+      "upwardReceivingFacesOnly": true,
+      "mismatches": [],
+      "nativeOrdinaryFacePointReferences": 925,
+      "nearestNativeLandings": 676,
+      "noIntersectionVerified": 179,
+      "maxHeightErrorMm": 4.547473508864641e-13,
+      "indexSource": "user uniform spacing 1200mm for marked regions; original XLSX for others",
+      "geometrySnapshot": "loaded original STEP snapshot, unchanged"
+    },
+    "gl": {
+      "passed": true,
+      "upwardReceivingFacesOnly": true,
+      "mismatches": [],
+      "nativeOrdinaryFacePointReferences": 95,
+      "nearestNativeLandings": 73,
+      "noIntersectionVerified": 22,
+      "maxHeightErrorMm": 4.547473508864641e-13,
+      "indexSource": "user uniform spacing 1200mm for marked regions; original XLSX for others",
+      "geometrySnapshot": "loaded original STEP snapshot, unchanged"
+    }
+  },
+  "roundingBoundaryToleranceMm": 0.005,
+  "checks": [
+    "strict greater-than3200",
+    "actual layer ownership rather than parity copies",
+    "before/after immutable original positions",
+    "1000 and1200 user spacing",
+    "original trigger ring picking records",
+    "512 result visibility combinations",
+    "single-layer geometry source scope"
+  ],
+  "browserUiVerified": false,
+  "browserUiLimitation": "Native browser control unavailable in this session; no browser screenshot acceptance claimed.",
+  "currentSchemeDisplay": {
+    "defaultApplied": true,
+    "switchVisibleAboveViewer": true,
+    "original1300NotOverlaid": true,
+    "screenshotSlab": "L3/even/even-R156",
+    "newPitch": 1200,
+    "oldPitchComparisonOnly": 1300,
+    "adjustedSlabColor": "#14b8c4",
+    "adjustedBeamColor": "#8b5cf6",
+    "unchangedAreasKeepOriginalColor": true,
+    "originalRestorationVerified": true,
+    "actualCoordinateDiagramVerified": true
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "ordinary": {
+    "beams": 253,
+    "beamGroups": 115,
+    "exemptGroups": 0,
+    "exemptParts": 34,
+    "passedGroups": 103,
+    "partialGroups": 12,
+    "pendingGroups": 0,
+    "passed": 253,
+    "pending": 0,
+    "zero": 70,
+    "uniqueModelPoints": 415,
+    "junctionPoints": 23,
+    "junctionModulusExceptionPoints": 15,
+    "pendingJunctions": 0,
+    "excludedJunctions": 70,
+    "pendingRegions": 12
+  },
+  "ordinaryLandings": {
+    "total": 830,
+    "found": 443,
+    "missing": 179,
+    "review": 208,
+    "crossLayer": 49
+  },
+  "floor": {
+    "floors": 93,
+    "passed": 75,
+    "exempt": 18,
+    "pending": 0,
+    "uniqueModelPoints": 332
+  },
+  "floorLandings": {
+    "total": 664,
+    "found": 476,
+    "missing": 188,
+    "review": 0,
+    "crossLayer": 44
+  },
+  "checks": [
+    "native阴线分段",
+    "only neck fragments <=200 exempt; equal-width ordinary beams remain",
+    "only yang AND actual beam overlap permits slab carve",
+    "even-R007 and even-R157 restored as complete slabs",
+    "no point lies in a removed beam patch",
+    "native yin survives partition; yin takes precedence over width transition",
+    "junction height rule retained; true-junction modulus exceptions flagged",
+    "original GL input unchanged",
+    "positions only, no components selected"
+  ]
+}

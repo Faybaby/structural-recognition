@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "browser": "IAB localhost",
+  "baseline": {
+    "origin": [
+      8600,
+      4100
+    ],
+    "angleDeg": 0
+  },
+  "observed": [
+    "79 unique floors passed / 14 pending;459 three-layer points",
+    "500 equality accepted and source spacing unchanged",
+    "1000x1000 hole shows100/100/100/100 offset and1200x1200 perimeter",
+    "Hole offset to outer floor boundary400mm explicitly pending",
+    "Cross-layer selection L3 toL1 /8530-2650=5880 /skipL2",
+    "Purple line endpoints and readable5880 label",
+    "CSV actual browser download459rows and24cross-layer rows",
+    "JSON actual browser download459points/282landings/177missing/24cross-layer",
+    "Baseline draft immediately clears lengths/lines/exports/cross selection;cancel restores",
+    "Display separation retains true length"
+  ],
+  "scope": "GD underside to actual top-surface vertical geometry; no fitting/base deduction",
+  "geometryUnchanged": true,
+  "originalGeometrySHA256": "2f9d990f06a186d8c974770f81bd4c71be05e8109b8c23f447f243045723b2dd"
+}

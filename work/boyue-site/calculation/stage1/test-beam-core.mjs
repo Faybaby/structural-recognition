@@ -1,0 +1,28 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+import {beamLookup,layoutBeamSpan,calculateBeams} from '../../stage1/beam-core.js';
+import {calculateLandings} from '../../stage1/landing-core.js';
+import {calculateFloors} from '../../stage1/floor-core.js';
+const read=p=>JSON.parse(fs.readFileSync(new URL(p,import.meta.url),'utf8')),input=read('../../stage1/beam-input.json'),data=read('../../stage1/data.json'),landing=read('../../stage1/landing-input.json');
+const lookup=beamLookup(input,{width:100,height:300,thickness:100});assert.equal(lookup.width,200);assert.equal(lookup.height,300);assert.equal(lookup.spacing,1300);assert.equal(lookup.cell,'B4');
+assert.equal(beamLookup(input,{width:150,height:301,thickness:100}).height,350);assert.equal(beamLookup(input,{width:99999,height:300,thickness:100}),null);
+const end=(a='yin',b='yin')=>[{type:a},{type:b}];
+let r=layoutBeamSpan({length:1199,gw:100,ends:end(),spacing:1200});assert.equal(r.nodes.length,0);
+r=layoutBeamSpan({length:1200,gw:100,ends:end(),spacing:1200});assert.equal(r.nodes.length,1);assert.equal(r.nodes[0].t,600);
+r=layoutBeamSpan({length:2400,gw:100,ends:end(),spacing:1200});assert.equal(r.nodes.length,1);assert.equal(r.nodes[0].t,1200);
+r=layoutBeamSpan({length:3850,gw:100,ends:end(),spacing:1200});assert.equal(r.status,'passed');assert.deepEqual(r.h,[700,750]);assert.deepEqual(r.nodes.map(n=>n.t),[700,1900,3100]);
+r=layoutBeamSpan({length:800,gw:100,ends:end('yang','yang'),spacing:1200});assert.equal(r.caseNumber,2);assert.equal(r.nodes.length,2);assert.equal(r.gtt,600);
+r=layoutBeamSpan({length:800,gw:150,ends:end('yang'),spacing:1200,originProjection:25});assert.equal(r.endOffsets[0],125);
+r=layoutBeamSpan({length:800,gw:151,ends:end('yang'),spacing:1200,originProjection:0});assert.equal(r.endOffsets[0],50);
+r=layoutBeamSpan({length:800,gw:100,ends:end('yang'),spacing:1200,originProjection:10});assert.equal(r.status,'pending');assert.equal(r.nodes.length,0);
+r=layoutBeamSpan({length:2000,gw:200,ends:end(),spacing:600});assert.equal(r.status,'pending');
+const settings={global:{origin:[8600,4100],angleDeg:0},locals:{},revision:1},out=calculateBeams(input,settings);
+assert.deepEqual(out.summary,{beams:32,passed:32,pending:0,zero:6,uniqueModelPoints:44,endPoints:38,interiorPoints:6});assert(out.beams.every(b=>b.alignmentChecked));
+assert.equal(out.beams.find(b=>b.id==='even/GL001').gdModel,'GD100X150');assert.equal(out.beams.find(b=>b.id==='even/GL001').index.width,200);assert.equal(out.beams.find(b=>b.id==='even/GL001').endOffsets[0],125);
+for(const b of out.beams){assert(b.index.width>=b.width&&b.index.height>=b.height);for(const n of b.nodes){assert(Math.abs(n.axisCoordinate/50-Math.round(n.axisCoordinate/50))<1e-7);const offset=b.start.map((v,i)=>n.world[i]-v),perp=offset[0]*b.tangent[1]-offset[1]*b.tangent[0];assert(Math.abs(perp)<1e-8);if(n.origin==='阳线端部')assert(n.gll>=(b.gw<=150?100:50)&&n.gll<=(b.gw<=150?130:80));}}
+const independent=calculateBeams(input,{...settings,locals:{'odd/odd-R148':{origin:[123,456],angleDeg:45}}});assert.deepEqual(independent,out);
+const before=JSON.stringify(input),noBase=calculateBeams(input,{global:null,locals:{},revision:1});assert(noBase.beams.every(b=>b.status==='pending'&&!b.nodes.length));assert.equal(JSON.stringify(input),before);
+const floor=calculateFloors(read('../../stage1/floor-input.json'),settings);assert.deepEqual(floor.summary,{floors:93,passed:75,exempt:18,pending:0,uniqueModelPoints:332});
+out.landings=calculateLandings({floors:out.beams},data,landing);assert.equal(out.landings.summary.total,88);
+const alt=calculateBeams(input,{...settings,global:{origin:[9100,10800],angleDeg:0}});assert.deepEqual(alt.beams.map(b=>b.nodes.map(n=>n.world)),out.beams.map(b=>b.nodes.map(n=>n.world)));
+fs.writeFileSync(new URL('../../../../outputs/挂梁支撑_含承接长度.json',import.meta.url),JSON.stringify({...out,settings},null,2));
+const report={passed:true,summary:out.summary,landings:out.landings.summary,lookupExample:lookup,checks:['100x300 -> 200x300 exact workbook cell','height rounds upward','missing ceiling stays pending','GTT<XX / =XX / =2XX / >2XX boundaries','GW1=150 uses 100..130','GW1>150 uses 50..80 and prefers50','125mm offset preserves baseline modulus','no legal GLL1 stays pending','long-beam500 inclusive and XX-100 exclusive','physical GD width150 preserved although lookup200','all true GL centers and native face IDs','floor-local baselines and floor points do not enter beam calculation','floor332-point results unchanged','four-layer88 point landing calculation']};fs.writeFileSync(new URL('./beam-verification.json',import.meta.url),JSON.stringify(report,null,2));console.log(JSON.stringify(report));

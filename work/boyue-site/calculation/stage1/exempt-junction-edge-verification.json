@@ -1,0 +1,74 @@
+{
+  "passed": true,
+  "pb027Cancelled": {
+    "id": "even/J038",
+    "key": "even",
+    "beamIds": [
+      "even/PB027/R01",
+      "even/PB046/C01/JG1"
+    ],
+    "point": [
+      29400,
+      8250
+    ],
+    "heightDifference": 50,
+    "status": "excluded",
+    "exemptParticipants": [
+      "even/PB046/C01/JG1"
+    ],
+    "exclusionType": "exempt-region",
+    "modulusException": null,
+    "modulusReview": {
+      "step": 50,
+      "axes": [
+        {
+          "beamId": "even/PB027/R01",
+          "baselineScope": "global",
+          "coordinate": 4150,
+          "nearestGridCoordinate": 4150,
+          "deviation": 0,
+          "onGrid": true
+        },
+        {
+          "beamId": "even/PB046/C01/JG1",
+          "baselineScope": "global",
+          "coordinate": 20800,
+          "nearestGridCoordinate": 20800,
+          "deviation": 0,
+          "onGrid": true
+        }
+      ],
+      "maxDeviation": 0
+    },
+    "reason": "与免放区域相交，取消交点支撑，不作为GTT分段锚点",
+    "owner": "even-NATIVE-even-B2-F604",
+    "sourceHeight": 2500,
+    "stations": [
+      -50,
+      1500
+    ]
+  },
+  "excludedExemptJunctions": 22,
+  "summary": {
+    "beams": 257,
+    "beamGroups": 115,
+    "exemptGroups": 0,
+    "exemptParts": 34,
+    "passedGroups": 103,
+    "partialGroups": 12,
+    "pendingGroups": 0,
+    "passed": 257,
+    "pending": 0,
+    "zero": 72,
+    "uniqueModelPoints": 417,
+    "junctionPoints": 23,
+    "junctionModulusExceptionPoints": 15,
+    "pendingJunctions": 0,
+    "excludedJunctions": 72,
+    "pendingRegions": 12
+  },
+  "pb046LongSides": [
+    "阳线",
+    "阳线"
+  ]
+}

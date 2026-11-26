@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "range": [
+    50,
+    80
+  ],
+  "preferred": 50,
+  "equal150": "previous range 100..130",
+  "changedBeams": [
+    "even/GL013",
+    "even/GL014",
+    "odd/GL013",
+    "odd/GL014"
+  ],
+  "movedFourLayerPoints": 12,
+  "summary": {
+    "beams": 32,
+    "passed": 32,
+    "pending": 0,
+    "zero": 6,
+    "uniqueModelPoints": 44,
+    "endPoints": 38,
+    "interiorPoints": 6
+  },
+  "landings": {
+    "total": 88,
+    "found": 66,
+    "missing": 22,
+    "review": 0,
+    "crossLayer": 0
+  },
+  "checks": [
+    "both yang ends choose50",
+    "range upper80 inclusive",
+    "no valid modulus remains pending",
+    "GW1=150 unchanged",
+    "all smaller-width and double-yin beam results unchanged",
+    "geometry/index/spacing unchanged",
+    "landings recomputed for moved positions"
+  ]
+}

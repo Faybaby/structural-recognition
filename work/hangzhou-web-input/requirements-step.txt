@@ -1,0 +1,2 @@
+cadquery-ocp-novtk==8.0.1.1.0
+shapely==2.2.0

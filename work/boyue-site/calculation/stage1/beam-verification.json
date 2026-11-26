@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "summary": {
+    "beams": 32,
+    "passed": 32,
+    "pending": 0,
+    "zero": 6,
+    "uniqueModelPoints": 44,
+    "endPoints": 38,
+    "interiorPoints": 6
+  },
+  "landings": {
+    "total": 88,
+    "found": 66,
+    "missing": 22,
+    "review": 0,
+    "crossLayer": 0
+  },
+  "lookupExample": {
+    "width": 200,
+    "height": 300,
+    "thickness": 100,
+    "storyHeight": 3000,
+    "spacing": 1300,
+    "cell": "B4"
+  },
+  "checks": [
+    "100x300 -> 200x300 exact workbook cell",
+    "height rounds upward",
+    "missing ceiling stays pending",
+    "GTT<XX / =XX / =2XX / >2XX boundaries",
+    "GW1=150 uses 100..130",
+    "GW1>150 uses 50..80 and prefers50",
+    "125mm offset preserves baseline modulus",
+    "no legal GLL1 stays pending",
+    "long-beam500 inclusive and XX-100 exclusive",
+    "physical GD width150 preserved although lookup200",
+    "all true GL centers and native face IDs",
+    "floor-local baselines and floor points do not enter beam calculation",
+    "floor332-point results unchanged",
+    "four-layer88 point landing calculation"
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "passed": true,
+  "summary": {
+    "floors": 93,
+    "passed": 75,
+    "exempt": 18,
+    "pending": 0,
+    "uniqueModelPoints": 332
+  },
+  "layers": [
+    {
+      "id": "L1",
+      "points": 164,
+      "exempt": 10
+    },
+    {
+      "id": "L2",
+      "points": 168,
+      "exempt": 8
+    },
+    {
+      "id": "L3",
+      "points": 164,
+      "exempt": 10
+    },
+    {
+      "id": "L4",
+      "points": 168,
+      "exempt": 8
+    }
+  ],
+  "landings": {
+    "total": 664,
+    "found": 476,
+    "missing": 188,
+    "review": 0,
+    "crossLayer": 44
+  },
+  "examples": {
+    "narrow": {
+      "id": "odd/odd-R151",
+      "width": 650,
+      "threshold": 1200,
+      "status": "exempt"
+    },
+    "hole": {
+      "id": "odd/odd-R145",
+      "points": 6,
+      "parts": [
+        {
+          "name": "洞口左侧",
+          "h": [
+            700,
+            700,
+            700,
+            700
+          ],
+          "points": 1
+        },
+        {
+          "name": "洞口右侧",
+          "h": [
+            800,
+            800,
+            700,
+            700
+          ],
+          "points": 1
+        }
+      ],
+      "nodes": [
+        {
+          "world": [
+            28800,
+            12300
+          ],
+          "origin": "分区普通点",
+          "boundaryException": false
+        },
+        {
+          "world": [
+            31500,
+            12300
+          ],
+          "origin": "分区普通点",
+          "boundaryException": false
+        },
+        {
+          "world": [
+            29500,
+            11700
+          ],
+          "origin": "洞周外围",
+          "boundaryException": true
+        },
+        {
+          "world": [
+            29500,
+            12900
+          ],
+          "origin": "洞周外围",
+          "boundaryException": true
+        },
+        {
+          "world": [
+            30700,
+            11700
+          ],
+          "origin": "洞周外围",
+          "boundaryException": true
+        },
+        {
+          "world": [
+            30700,
+            12900
+          ],
+          "origin": "洞周外围",
+          "boundaryException": true
+        }
+      ]
+    }
+  },
+  "checks": [
+    "短边与min(Sx,Sy)-100比较；等号仍算",
+    "斜置窄面真实短边不依赖基准角",
+    "窄面免放与待处理分开",
+    "odd-R145四个洞周点允许外边距不足500",
+    "洞口左右独立算；各一个普通点",
+    "普通点仍≥500；50模数与原表间距",
+    "井字参考网格覆盖实际轮廓，洞内和板外不放点"
+  ]
+}

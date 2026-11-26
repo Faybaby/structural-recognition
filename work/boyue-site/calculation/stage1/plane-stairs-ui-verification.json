@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "tool": "Codex in-app browser native UI",
+  "observed": {
+    "stairLocator": "楼梯阳线150 ↗",
+    "stairRegion": "L1 / even-Y001",
+    "widthMM": 150,
+    "actualSlopeLengthMM": 5012.6,
+    "planLengthMM": 4220,
+    "slopeRendered": true,
+    "excludedRegionIDs": [
+      "even-U009",
+      "even-U010"
+    ],
+    "excludedLabel": "楼梯排除 · 不计算",
+    "coplanarFloor": "even-U011",
+    "floorCategory": "板下区域",
+    "floorThicknessMM": 100,
+    "openingRetained": true
+  },
+  "nativeGeometryVerification": {
+    "passed": true,
+    "samplePoints": 2714
+  },
+  "scope": "已载入模型上的分类、排除及独立阳线计算矩形；未生成GD点位或数量"
+}

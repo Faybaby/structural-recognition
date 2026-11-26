@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "summary": {
+    "total": 664,
+    "found": 476,
+    "missing": 188,
+    "review": 0,
+    "crossLayer": 44
+  },
+  "layers": [
+    {
+      "id": "L1",
+      "key": "even",
+      "offset": 0,
+      "points": 164,
+      "found": 0,
+      "missing": 164,
+      "crossLayer": 0
+    },
+    {
+      "id": "L2",
+      "key": "odd",
+      "offset": 3000,
+      "points": 168,
+      "found": 144,
+      "missing": 24,
+      "crossLayer": 0
+    },
+    {
+      "id": "L3",
+      "key": "even",
+      "offset": 6000,
+      "points": 164,
+      "found": 164,
+      "missing": 0,
+      "crossLayer": 20
+    },
+    {
+      "id": "L4",
+      "key": "odd",
+      "offset": 9000,
+      "points": 168,
+      "found": 168,
+      "missing": 0,
+      "crossLayer": 24
+    }
+  ],
+  "fourthLayerCrossExample": {
+    "id": "L4/odd/odd-R161-P001",
+    "layer": "L4",
+    "floorId": "odd/odd-R161",
+    "nodeId": "odd/odd-R161-P001",
+    "world": [
+      19000,
+      4700
+    ],
+    "startHeight": 11830,
+    "sourceFace": "odd-B1-F1379",
+    "status": "found",
+    "length": 5880,
+    "landing": {
+      "height": 5950,
+      "native": 2950,
+      "face": "odd-B12-F609",
+      "layer": "L2",
+      "key": "odd",
+      "order": 2,
+      "kind": "slab",
+      "region": "odd-R161"
+    },
+    "crossLayer": true,
+    "layerDifference": 2,
+    "skippedLayers": [
+      "L3"
+    ],
+    "checks": [
+      {
+        "layer": "L4",
+        "status": "no-surface-below"
+      },
+      {
+        "layer": "L3",
+        "status": "no-surface-below"
+      },
+      {
+        "layer": "L2",
+        "status": "hit"
+      },
+      {
+        "layer": "L1",
+        "status": "no-surface-below"
+      }
+    ],
+    "rule": "从固顶承托位置竖直向下，与已载入原生顶面求最近实际交点；中间层洞口继续向下；无交点不估算",
+    "lengthMeaning": "几何竖向距离，未扣除固顶及底座构造尺寸"
+  },
+  "checks": [
+    "四层偶奇偶奇及0/3000/6000/9000平移",
+    "原生几何、输入及基准键不变",
+    "原前三层所有承接结果完全一致",
+    "第4层所有已布置点逐点求实际承接面",
+    "第4层跨层点跳过L3落L2",
+    "显示分离未参与真实坐标计算"
+  ]
+}

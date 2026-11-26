@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "summary": {
+    "beams": 253,
+    "beamGroups": 115,
+    "exemptGroups": 0,
+    "exemptParts": 34,
+    "passedGroups": 103,
+    "partialGroups": 12,
+    "pendingGroups": 0,
+    "passed": 253,
+    "pending": 0,
+    "zero": 70,
+    "uniqueModelPoints": 415,
+    "junctionPoints": 23,
+    "junctionModulusExceptionPoints": 15,
+    "pendingJunctions": 0,
+    "excludedJunctions": 70,
+    "pendingRegions": 12
+  },
+  "landings": {
+    "total": 830,
+    "found": 443,
+    "missing": 179,
+    "review": 208,
+    "crossLayer": 49
+  },
+  "checks": [
+    "one native face one beam",
+    "circled F49 + rebate F31 are one beam",
+    "DWG partition boundaries never split native face",
+    "source levels2430/2450 retained",
+    "height difference99 places /100 excludes",
+    "true intersections not silently displaced",
+    "true-junction modulus exceptions explicitly flagged",
+    "junction deduplicated",
+    "real arc-length path",
+    "point on actual source bottom",
+    "fixed spacing/end-margin branches",
+    "width/height table ceilings",
+    "floor/GL inputs and algorithms unchanged",
+    "floor local settings do not influence beams"
+  ]
+}

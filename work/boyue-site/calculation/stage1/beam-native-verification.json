@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "nativeGLFacePoints": 44,
+  "nearestNativeLandings": 66,
+  "noIntersectionVerified": 22,
+  "maxHeightErrorMm": 4.547473508864641e-13,
+  "indexSource": "original XLSX 3000 sheet exact cells",
+  "geometrySnapshot": "loaded original STEP snapshot, unchanged"
+}

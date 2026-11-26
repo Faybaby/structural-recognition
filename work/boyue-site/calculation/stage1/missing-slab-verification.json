@@ -1,0 +1,258 @@
+{
+  "passed": true,
+  "summary": {
+    "beams": 257,
+    "beamGroups": 115,
+    "exemptGroups": 0,
+    "exemptParts": 34,
+    "passedGroups": 103,
+    "partialGroups": 12,
+    "pendingGroups": 0,
+    "passed": 257,
+    "pending": 0,
+    "zero": 72,
+    "uniqueModelPoints": 417,
+    "junctionPoints": 23,
+    "junctionModulusExceptionPoints": 15,
+    "pendingJunctions": 0,
+    "excludedJunctions": 72,
+    "pendingRegions": 12
+  },
+  "landings": {
+    "total": 834,
+    "found": 447,
+    "missing": 179,
+    "review": 208,
+    "crossLayer": 49
+  },
+  "defaultedRoutes": [
+    {
+      "id": "even/PB010/R01",
+      "sourceThickness": 470,
+      "calculationThickness": 150,
+      "index": {
+        "width": 200,
+        "height": 700,
+        "thickness": 150,
+        "storyHeight": 3000,
+        "spacing": 1100,
+        "cell": "G12"
+      },
+      "status": "passed",
+      "nodes": [
+        [
+          16150,
+          11000
+        ],
+        [
+          17250,
+          11000
+        ],
+        [
+          18350,
+          11000
+        ],
+        [
+          19450,
+          11000
+        ]
+      ]
+    },
+    {
+      "id": "even/PB039/R01",
+      "sourceThickness": 470,
+      "calculationThickness": 150,
+      "index": {
+        "width": 200,
+        "height": 500,
+        "thickness": 150,
+        "storyHeight": 3000,
+        "spacing": 1200,
+        "cell": "G8"
+      },
+      "status": "passed",
+      "nodes": [
+        [
+          16400,
+          12250
+        ],
+        [
+          16400,
+          11650
+        ],
+        [
+          16400,
+          12900
+        ]
+      ]
+    },
+    {
+      "id": "even/PB040/R01",
+      "sourceThickness": 470,
+      "calculationThickness": 150,
+      "index": {
+        "width": 200,
+        "height": 400,
+        "thickness": 150,
+        "storyHeight": 3000,
+        "spacing": 1200,
+        "cell": "G6"
+      },
+      "status": "passed",
+      "nodes": []
+    },
+    {
+      "id": "even/PB047/R01",
+      "sourceThickness": 470,
+      "calculationThickness": 150,
+      "index": {
+        "width": 200,
+        "height": 500,
+        "thickness": 150,
+        "storyHeight": 3000,
+        "spacing": 1200,
+        "cell": "G8"
+      },
+      "status": "passed",
+      "nodes": [
+        [
+          20000,
+          11750
+        ],
+        [
+          20000,
+          12950
+        ]
+      ]
+    },
+    {
+      "id": "odd/PB011/R01",
+      "sourceThickness": 470,
+      "calculationThickness": 150,
+      "index": {
+        "width": 200,
+        "height": 700,
+        "thickness": 150,
+        "storyHeight": 3000,
+        "spacing": 1100,
+        "cell": "G12"
+      },
+      "status": "passed",
+      "nodes": [
+        [
+          16150,
+          11000
+        ],
+        [
+          17250,
+          11000
+        ],
+        [
+          18350,
+          11000
+        ],
+        [
+          19450,
+          11000
+        ]
+      ]
+    },
+    {
+      "id": "odd/PB029/R01",
+      "sourceThickness": null,
+      "calculationThickness": 150,
+      "index": {
+        "width": 200,
+        "height": 550,
+        "thickness": 150,
+        "storyHeight": 3000,
+        "spacing": 1200,
+        "cell": "G9"
+      },
+      "status": "passed",
+      "nodes": [
+        [
+          17000,
+          16100
+        ],
+        [
+          18200,
+          16100
+        ],
+        [
+          19400,
+          16100
+        ]
+      ]
+    },
+    {
+      "id": "odd/PB040/R01",
+      "sourceThickness": 470,
+      "calculationThickness": 150,
+      "index": {
+        "width": 200,
+        "height": 500,
+        "thickness": 150,
+        "storyHeight": 3000,
+        "spacing": 1200,
+        "cell": "G8"
+      },
+      "status": "passed",
+      "nodes": [
+        [
+          16400,
+          12250
+        ],
+        [
+          16400,
+          11650
+        ],
+        [
+          16400,
+          12900
+        ]
+      ]
+    },
+    {
+      "id": "odd/PB041/R01",
+      "sourceThickness": 470,
+      "calculationThickness": 150,
+      "index": {
+        "width": 200,
+        "height": 400,
+        "thickness": 150,
+        "storyHeight": 3000,
+        "spacing": 1200,
+        "cell": "G6"
+      },
+      "status": "passed",
+      "nodes": []
+    },
+    {
+      "id": "odd/PB045/R01",
+      "sourceThickness": 470,
+      "calculationThickness": 150,
+      "index": {
+        "width": 200,
+        "height": 500,
+        "thickness": 150,
+        "storyHeight": 3000,
+        "spacing": 1200,
+        "cell": "G8"
+      },
+      "status": "passed",
+      "nodes": [
+        [
+          20000,
+          11750
+        ],
+        [
+          20000,
+          12950
+        ]
+      ]
+    }
+  ],
+  "recognizedInRangeThicknessRetained": true,
+  "inputUnchanged": true
+}

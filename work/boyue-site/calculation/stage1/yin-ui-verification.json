@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "ordinary": {
+    "beams": 213,
+    "beamGroups": 149,
+    "exemptGroups": 4,
+    "exemptParts": 72,
+    "passedGroups": 132,
+    "partialGroups": 8,
+    "pendingGroups": 5,
+    "passed": 176,
+    "pending": 37,
+    "zero": 18,
+    "uniqueModelPoints": 476,
+    "junctionPoints": 10,
+    "pendingJunctions": 16,
+    "excludedJunctions": 54,
+    "pendingRegions": 0
+  },
+  "landings": {
+    "total": 952,
+    "found": 497,
+    "missing": 193,
+    "review": 262,
+    "crossLayer": 39
+  },
+  "floor": {
+    "floors": 93,
+    "passed": 75,
+    "exempt": 18,
+    "pending": 0,
+    "uniqueModelPoints": 314
+  },
+  "floorLandings": {
+    "total": 628,
+    "found": 452,
+    "missing": 176,
+    "review": 0,
+    "crossLayer": 38
+  },
+  "positionsOnly": true,
+  "componentSelection": "deferred",
+  "numericToleranceMm": 1e-09,
+  "displaySwitchesDoNotChangeExport": true,
+  "csvRows": 952,
+  "pointRowsUnique": true,
+  "beamSlabPatchInspector": true,
+  "selectedCorner": "even/PB027/R02",
+  "offsetMm": 50,
+  "remainingSlabDimensions": [
+    1200,
+    3100
+  ],
+  "yinCutSwitchHides2DAnd3D": true,
+  "browserErrors": []
+}

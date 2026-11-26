@@ -1,0 +1,15 @@
+{
+  "only3dResults": true,
+  "pan": true,
+  "layerLift": true,
+  "xyz": true,
+  "baselineRecalculation": true,
+  "currentDxf": true,
+  "height3600BlocksMissingInputs": 44,
+  "height3600AfterManual": "1565\n三维固顶候选\n687\n上下同位坐标对\n1003\n必须连接的横杆段\n135\n待复核记录",
+  "netHeight3200Bracing": true,
+  "baselineToolBridge": true,
+  "sourcesDialog": true,
+  "browserErrors": [],
+  "passed": true
+}

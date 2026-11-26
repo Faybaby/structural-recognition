@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "points": 294,
+  "summary": {
+    "beams": 264,
+    "beamGroups": 115,
+    "exemptGroups": 0,
+    "exemptParts": 34,
+    "passedGroups": 80,
+    "partialGroups": 23,
+    "pendingGroups": 12,
+    "passed": 217,
+    "pending": 47,
+    "zero": 82,
+    "uniqueModelPoints": 294,
+    "junctionPoints": 6,
+    "pendingJunctions": 25,
+    "excludedJunctions": 73,
+    "pendingRegions": 12
+  },
+  "maxCoordinateErrorMm": 2.2737367544323206e-13
+}

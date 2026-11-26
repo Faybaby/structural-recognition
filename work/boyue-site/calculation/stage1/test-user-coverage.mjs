@@ -1,0 +1,17 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';
+import {calculateFloors,regionContains} from '../../stage1/floor-core.js';
+import {physicalShortSide} from '../../stage1/layout-zones.js';
+import {calculateLandings} from '../../stage1/landing-core.js';
+const read=p=>JSON.parse(fs.readFileSync(new URL(p,import.meta.url),'utf8')),input=read('../../stage1/floor-input.json'),data=read('../../stage1/data.json'),landing=read('../../stage1/landing-input.json');
+const settings={global:{origin:[8600,4100],angleDeg:0},locals:{},revision:1};const out=calculateFloors(input,settings),find=id=>out.floors.find(f=>f.id===id);
+const narrow=find('odd/odd-R151');assert.equal(narrow.status,'exempt');assert.equal(narrow.narrowSize,650);assert.equal(narrow.narrowThreshold,1200);assert.equal(narrow.nodes.length,0);
+const hole=find('odd/odd-R145');assert.equal(hole.status,'passed');assert.equal(hole.nodes.length,6);assert.equal(hole.splitParts.length,2);assert.equal(hole.nodes.filter(n=>n.boundaryException).length,4);assert(hole.splitParts.every(p=>p.status==='passed'&&p.pointCount===1&&p.h.every(v=>v>=500)));
+assert.deepEqual(hole.nodes.filter(n=>n.origin==='分区普通点').map(n=>n.world),[[28800,12300],[31500,12300]]);
+assert(hole.nodes.every(n=>regionContains(n.world,input.floors.find(f=>f.id===hole.id).region)));assert(hole.nodes.every(n=>n.u%50===0&&n.v%50===0));
+const angle=Math.PI/4,rotated=[{polygon:[[0,0],[650,0],[650,4200],[0,4200]].map(([x,y])=>[x*Math.cos(angle)-y*Math.sin(angle),x*Math.sin(angle)+y*Math.cos(angle)]),holes:[]}];assert(Math.abs(physicalShortSide(rotated)-650)<1e-7);
+function fixture(w,h,sx=1300,sy=1200){const region=[{polygon:[[0,0],[w,0],[w,h],[0,h]],holes:[]}],f={id:'A',name:'A',key:'even',memberIds:['A'],memberBaselineKeys:['A'],region,holes:[],thickness:100,members:[{id:'A',face:'F',bottom:2900,region}]};return calculateFloors({floors:[f],index:[{thickness:100,storyHeight:3000,sx,sy}],storyHeight:3000,source:{},rules:{},overlapGroups:[{floors:['A'],pairs:[]}]},{global:{origin:[0,0],angleDeg:0},locals:{},revision:1}).floors[0];}
+assert.equal(fixture(1099,3000).status,'exempt');assert.notEqual(fixture(1100,3000).status,'exempt');assert.notEqual(fixture(1250,3000).status,'exempt');
+for(const r of out.floors.filter(r=>r.status==='passed'))for(const p of r.splitParts||[])if(p.status==='passed'){assert(p.h.every(v=>v>=500));assert(p.coverage.x[0]<=p.bounds[0]&&p.coverage.x.at(-1)>=p.bounds[2]);}
+out.landings=calculateLandings(out,data,landing);const layers=data.instances.map(i=>({id:i.id,points:out.landings.points.filter(p=>p.layer===i.id).length,exempt:out.floors.filter(f=>f.key===i.key&&f.status==='exempt').length}));
+const report={passed:true,summary:out.summary,layers,landings:out.landings.summary,examples:{narrow:{id:narrow.id,width:narrow.narrowSize,threshold:narrow.narrowThreshold,status:narrow.status},hole:{id:hole.id,points:hole.nodes.length,parts:hole.splitParts.map(p=>({name:p.name,h:p.h,points:p.pointCount})),nodes:hole.nodes.map(n=>({world:n.world,origin:n.origin,boundaryException:!!n.boundaryException}))}},checks:['短边与min(Sx,Sy)-100比较；等号仍算','斜置窄面真实短边不依赖基准角','窄面免放与待处理分开','odd-R145四个洞周点允许外边距不足500','洞口左右独立算；各一个普通点','普通点仍≥500；50模数与原表间距','井字参考网格覆盖实际轮廓，洞内和板外不放点']};
+fs.writeFileSync(new URL('./user-coverage-verification.json',import.meta.url),JSON.stringify(report,null,2));fs.writeFileSync(new URL('../../../../outputs/楼面支撑_含承接面长度.json',import.meta.url),JSON.stringify({...out,actualBaseline:settings},null,2));console.log(JSON.stringify(report));

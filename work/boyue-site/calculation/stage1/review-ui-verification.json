@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "beamRows": 88,
+  "floorRows": 664,
+  "allBeamPositionsAndLandingsMatchPublishedV23": true,
+  "allVisibilityAndProposalClicksLeaveBeamExportIdentical": true,
+  "noComponentModelInPositionExports": true,
+  "positionsOnly": true,
+  "exportSha256": "f02f37dc1f7822cdd27ee7936aa805098dcfbec275a49115ff51fd8a6eba1465",
+  "UIchecks": [
+    "right-side calculation steps change on beam/floor result click",
+    "width-step review opens protected status with unchanged native faces",
+    "all-marker-off keeps native model visible",
+    "individual GL/position switches work",
+    "model selection hidden and no component-head geometry drawn"
+  ]
+}

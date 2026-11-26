@@ -1,0 +1,500 @@
+{
+  "passed": true,
+  "originalYinEndsPreserved": 344,
+  "trueYangEndsPreserved": 14,
+  "correctedEnds": 98,
+  "changes": [
+    {
+      "beam": "even/PB002/R04",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB002/R04",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB003/R05",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB003/R05",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB007/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB007/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB007/R02",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB007/R02",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB009/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB009/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB009/R03",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB009/R03",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB011/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB011/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB011/R02",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB011/R02",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB011/R03",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB011/R03",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB011/R04",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB011/R04",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB011/R05",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB011/R05",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB012/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB020/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB020/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB020/R02",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB020/R02",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB023/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB023/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB023/R02",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB023/R02",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB024/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB024/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB028/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB028/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB028/R02",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB028/R02",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB030/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB030/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB030/R02",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB030/R02",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB040/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB040/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB043/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB043/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB046/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB048/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "even/PB048/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB001/R06",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB002/R03",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB007/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB007/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB007/R02",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB007/R02",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB009/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB009/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB009/R03",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB009/R03",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB012/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB012/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB012/R02",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB012/R02",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB012/R03",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB012/R03",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB012/R04",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB012/R04",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB012/R05",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB012/R05",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB013/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB015/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB016/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB016/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB016/R02",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB016/R02",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB020/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB020/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB020/R02",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB021/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB021/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB021/R02",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB027/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB027/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB027/R02",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB027/R02",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB033/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB033/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB033/R02",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB033/R02",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB041/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB041/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB044/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB044/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB044/R02",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB044/R02",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB046/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB046/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB048/R01",
+      "end": 0,
+      "reason": "原生端外存在实体，保留原阴线"
+    },
+    {
+      "beam": "odd/PB048/R01",
+      "end": 1,
+      "reason": "原生端外存在实体，保留原阴线"
+    }
+  ],
+  "sourceGeometryAndPartitionsUnchanged": true,
+  "floorAndGLUnchanged": true
+}

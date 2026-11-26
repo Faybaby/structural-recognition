@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "nativeSupportPointsVerified": 332,
+  "actualBaseline": {
+    "global": {
+      "origin": [
+        8600,
+        4100
+      ],
+      "angleDeg": 0
+    },
+    "locals": {},
+    "revision": 1
+  },
+  "summary": {
+    "floors": 93,
+    "passed": 75,
+    "exempt": 18,
+    "pending": 0,
+    "uniqueModelPoints": 332
+  },
+  "layerPointCounts": {
+    "even": 164,
+    "odd": 168
+  },
+  "checks": [
+    "全部通过点在原生STEP实际承托面上",
+    "固定Sx/Sy与索引行完全一致",
+    "轴线50模数",
+    "严格四边与逐行列端距",
+    "洞口实体外及净距",
+    "共同区域真实XY同位",
+    "待处理不产生正式点位"
+  ],
+  "modelSnapshot": "网页已载入几何版本；本地后续模型修改未自动导入"
+}

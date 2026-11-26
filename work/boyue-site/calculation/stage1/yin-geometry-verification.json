@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "logicalBeams": 115,
+  "parts": 225,
+  "exemptParts": 60,
+  "maxPartitionAreaErrorMm2": 0,
+  "checks": [
+    "every calculation partition conserves native beam area",
+    "all original slab area remains slab or is explicitly carved as beam",
+    "no floor/beam overlap",
+    "original beam material retained",
+    "unqualified floorR074 remains slab",
+    "PB028 cannot contain its broad slab"
+  ]
+}

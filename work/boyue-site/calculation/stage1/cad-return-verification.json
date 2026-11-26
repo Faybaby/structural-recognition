@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "source": "18ce6084683a7a2596e34d5cc0f76eefd991f6885a20ef95bfeeb7982cd4eb3d",
+  "summary": {
+    "beams": 257,
+    "beamGroups": 115,
+    "exemptGroups": 0,
+    "exemptParts": 34,
+    "passedGroups": 103,
+    "partialGroups": 12,
+    "pendingGroups": 0,
+    "passed": 257,
+    "pending": 0,
+    "zero": 72,
+    "uniqueModelPoints": 417,
+    "junctionPoints": 23,
+    "junctionModulusExceptionPoints": 15,
+    "pendingJunctions": 0,
+    "excludedJunctions": 72,
+    "pendingRegions": 12
+  },
+  "landings": {
+    "total": 834,
+    "found": 447,
+    "missing": 179,
+    "review": 208,
+    "crossLayer": 49
+  },
+  "retainedNativeFaces": 133,
+  "floorAndGLUnchanged": true,
+  "threeDRegionsUnchanged": true,
+  "glModelPoints": 44,
+  "diagonalNeedsBaseline": true,
+  "example2100": [
+    [
+      1900,
+      13175
+    ],
+    [
+      2900,
+      13175
+    ]
+  ],
+  "example3900": [
+    [
+      4850,
+      13175
+    ],
+    [
+      5850,
+      13175
+    ],
+    [
+      6850,
+      13175
+    ],
+    [
+      7850,
+      13175
+    ]
+  ],
+  "tableMismatch": {
+    "route": "even/PB003/CAD-A02",
+    "section": [
+      400,
+      550
+    ],
+    "slab": 120,
+    "spacing": 900,
+    "reason": "CAD示例1000与原表D89=900不同，保留原表计算并列出差异"
+  }
+}

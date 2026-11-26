@@ -1,0 +1,5953 @@
+{
+  "revision": "20261118-r1",
+  "source": "(修正版)铂悦府6号_3F_支撑布置及计算公式_20261118.dwg",
+  "sha256": "83bbdb0bb7bfb3ac5d50855293943dc289cd6c4c0941caff64ee9923f30f1dc6",
+  "confirmedClarifications": [
+    "200×700/板厚150按原表G12=1100，不采纳图中文字1200",
+    "保留高差<100、免放不参与；同一接头去重",
+    "斜梁按本次图示端点确认独立基准",
+    "斜梁继续按尽量均分自动计算，不固定图示600mm"
+  ],
+  "ruleSummary": [
+    "板厚未知或超出100～250，按150查表，保留原读数",
+    "同宽同高连续中心线跨辅助侧边分割按整根GTT",
+    "已有真实交点替代该接头阳线端点，不重复放置",
+    "同高GL与普通梁共同判定交点",
+    "普通梁端距达到XX−100，即使GTT<XX仍补点",
+    "楼梯梁完整计算、优先居中，端距>1300继续居中补点",
+    "所有中心线先求交点，同一实体接头去重；保留高差及免放判定",
+    "斜梁采用修正版已确认的独立基准",
+    "相同结构使用同一规则；补充轴线须整段位于真实三维梁面"
+  ],
+  "supplementAxes": [
+    {
+      "id": "even/PB003/CAD18-A01",
+      "groupId": "even/PB003",
+      "start": [
+        4950,
+        1400
+      ],
+      "end": [
+        8975,
+        1400
+      ],
+      "width": 400,
+      "thickness": 120,
+      "rule": "修正版完整中心线GTT=4025，整段经过三维梁面核验",
+      "handles": [
+        "52FA",
+        "541D",
+        "541E"
+      ]
+    }
+  ],
+  "diagonalBaselines": [
+    {
+      "id": "even/PB003/CAD-D01",
+      "origin": [
+        8194.357222072254,
+        239.069359267257
+      ],
+      "handles": [
+        "59CB",
+        "5969",
+        "5977"
+      ]
+    }
+  ],
+  "glJunctionGuides": [
+    {
+      "id": "even/GL001",
+      "key": "even",
+      "name": "even-R042/even-R043",
+      "memberIds": [
+        "even-R042",
+        "even-R043"
+      ],
+      "sourceFace": "even-B2-F271",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0,
+        3350.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              17650.0,
+              12300.0
+            ],
+            [
+              17750.0,
+              12300.0
+            ],
+            [
+              17750.0,
+              12200.0
+            ],
+            [
+              17650.0,
+              12200.0
+            ],
+            [
+              17550.0,
+              12200.0
+            ],
+            [
+              17425.0,
+              12200.0
+            ],
+            [
+              16825.0,
+              12200.0
+            ],
+            [
+              16825.0,
+              12300.0
+            ],
+            [
+              17425.0,
+              12300.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        16825.0,
+        12250.0
+      ],
+      "end": [
+        17750.0,
+        12250.0
+      ],
+      "length": 925.0,
+      "gw": 100.0,
+      "width": 150.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "29AA9",
+          "text": "GL:100X850",
+          "at": [
+            17081.6,
+            11980.8
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 219.2
+        },
+        {
+          "source": "29AA9",
+          "text": "GL:100X850",
+          "at": [
+            17081.6,
+            11980.8
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 219.2
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3802",
+          "overlap": 1.0,
+          "width": 150.0,
+          "labels": [
+            {
+              "source": "3803",
+              "text": "150x400",
+              "at": [
+                17946.0,
+                12215.0
+              ],
+              "width": 150,
+              "height": 400,
+              "distance": 0.0
+            },
+            {
+              "source": "3801",
+              "text": "200x500",
+              "at": [
+                16462.9,
+                12204.5
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 37.1
+            },
+            {
+              "source": "38C8",
+              "text": "200x500",
+              "at": [
+                20060.0,
+                12088.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 195.3
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "even/even-R164",
+          "thickness": 120,
+          "distance": 50.0
+        },
+        {
+          "id": "even/even-R168",
+          "thickness": 120,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            16825.0,
+            12250.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            16824.5,
+            12250.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            17750.0,
+            12250.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            17750.5,
+            12250.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": true
+            },
+            {
+              "height": 2150.5,
+              "inside": true
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          16825.0,
+          12250.0
+        ],
+        "end": [
+          17750.0,
+          12250.0
+        ],
+        "length": 925.0,
+        "gw": 100.0
+      },
+      "groupId": "even/GL001",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "even/GL002",
+      "key": "even",
+      "name": "even-R093/even-R095",
+      "memberIds": [
+        "even-R093",
+        "even-R095"
+      ],
+      "sourceFace": "even-B2-F592",
+      "bottom": 2500.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0,
+        3350.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              16500.0,
+              12200.0
+            ],
+            [
+              16500.0,
+              12300.0
+            ],
+            [
+              16600.0,
+              12300.0
+            ],
+            [
+              16825.0,
+              12300.0
+            ],
+            [
+              16825.0,
+              12200.0
+            ],
+            [
+              16700.0,
+              12200.0
+            ],
+            [
+              16600.0,
+              12200.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        16500.0,
+        12250.0
+      ],
+      "end": [
+        16825.0,
+        12250.0
+      ],
+      "length": 325.0,
+      "gw": 100.0,
+      "width": 150.0,
+      "height": 500,
+      "glHeightEvidence": [
+        {
+          "source": "11FC2",
+          "text": "GL:100X500",
+          "at": [
+            16304.2,
+            11983.1
+          ],
+          "width": 100,
+          "height": 500,
+          "distance": 292.2
+        },
+        {
+          "source": "11FC2",
+          "text": "GL:100X500",
+          "at": [
+            16304.2,
+            11983.1
+          ],
+          "width": 100,
+          "height": 500,
+          "distance": 292.2
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3802",
+          "overlap": 1.0,
+          "width": 150.0,
+          "labels": [
+            {
+              "source": "3803",
+              "text": "150x400",
+              "at": [
+                17946.0,
+                12215.0
+              ],
+              "width": 150,
+              "height": 400,
+              "distance": 0.0
+            },
+            {
+              "source": "3801",
+              "text": "200x500",
+              "at": [
+                16462.9,
+                12204.5
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 37.1
+            },
+            {
+              "source": "38C8",
+              "text": "200x500",
+              "at": [
+                20060.0,
+                12088.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 195.3
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "even/even-R162",
+          "thickness": 120,
+          "distance": 200.0
+        },
+        {
+          "id": "even/even-R164",
+          "thickness": 120,
+          "distance": 50.0
+        },
+        {
+          "id": "even/even-R168",
+          "thickness": 120,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            16500.0,
+            12250.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            16499.5,
+            12250.0
+          ],
+          "probes": [
+            {
+              "height": 2499.5,
+              "inside": false
+            },
+            {
+              "height": 2500.5,
+              "inside": true
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            16825.0,
+            12250.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            16825.5,
+            12250.0
+          ],
+          "probes": [
+            {
+              "height": 2499.5,
+              "inside": true
+            },
+            {
+              "height": 2500.5,
+              "inside": true
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          16500.0,
+          12250.0
+        ],
+        "end": [
+          16825.0,
+          12250.0
+        ],
+        "length": 325.0,
+        "gw": 100.0
+      },
+      "groupId": "even/GL002",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "even/GL003",
+      "key": "even",
+      "name": "even-R119",
+      "memberIds": [
+        "even-R119"
+      ],
+      "sourceFace": "even-B2-F1398",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              2800.0,
+              8900.0
+            ],
+            [
+              2700.0,
+              8900.0
+            ],
+            [
+              2700.0,
+              9700.0
+            ],
+            [
+              2800.0,
+              9700.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 1,
+      "start": [
+        2750.0,
+        8900.0
+      ],
+      "end": [
+        2750.0,
+        9700.0
+      ],
+      "length": 800.0,
+      "gw": 100.0,
+      "width": 150.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "F6B0",
+          "text": "GL:100X850",
+          "at": [
+            3020.49,
+            8988.61
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 220.49
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3ADB",
+          "overlap": 1.0,
+          "width": 150.0,
+          "labels": [
+            {
+              "source": "3AE7",
+              "text": "150x450",
+              "at": [
+                2791.33,
+                8765.83
+              ],
+              "width": 150,
+              "height": 450,
+              "distance": 0.0
+            }
+          ]
+        }
+      ],
+      "thickness": 100,
+      "slabEvidence": [
+        {
+          "id": "even/even-R066",
+          "thickness": 100,
+          "distance": 50.0
+        },
+        {
+          "id": "even/even-R135",
+          "thickness": 100,
+          "distance": 200.0
+        },
+        {
+          "id": "even/even-R138",
+          "thickness": 100,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            2750.0,
+            8900.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            2750.0,
+            8899.5
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            2750.0,
+            9700.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            2750.0,
+            9700.5
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          2750.0,
+          8900.0
+        ],
+        "end": [
+          2750.0,
+          9700.0
+        ],
+        "length": 800.0,
+        "gw": 100.0
+      },
+      "groupId": "even/GL003",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "even/GL004",
+      "key": "even",
+      "name": "even-R120",
+      "memberIds": [
+        "even-R120"
+      ],
+      "sourceFace": "even-B2-F1402",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              2800.0,
+              5800.0
+            ],
+            [
+              2700.0,
+              5800.0
+            ],
+            [
+              2700.0,
+              6600.0
+            ],
+            [
+              2800.0,
+              6600.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 1,
+      "start": [
+        2750.0,
+        5800.0
+      ],
+      "end": [
+        2750.0,
+        6600.0
+      ],
+      "length": 800.0,
+      "gw": 100.0,
+      "width": 150.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "F6B1",
+          "text": "GL:100X850",
+          "at": [
+            3017.98,
+            5869.88
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 217.98
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "381C",
+          "overlap": 1.0,
+          "width": 150.0,
+          "labels": [
+            {
+              "source": "381D",
+              "text": "150x450",
+              "at": [
+                2785.0,
+                6749.33
+              ],
+              "width": 150,
+              "height": 450,
+              "distance": 0.0
+            },
+            {
+              "source": "37E9",
+              "text": "200x450",
+              "at": [
+                2388.0,
+                5640.0
+              ],
+              "width": 200,
+              "height": 450,
+              "distance": 306.99
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "even/even-R007",
+          "thickness": 120,
+          "distance": 200.0
+        },
+        {
+          "id": "even/even-R059",
+          "thickness": 100,
+          "distance": 50.0
+        },
+        {
+          "id": "even/even-R139",
+          "thickness": 100,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            2750.0,
+            5800.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            2750.0,
+            5799.5
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            2750.0,
+            6600.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            2750.0,
+            6600.5
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          2750.0,
+          5800.0
+        ],
+        "end": [
+          2750.0,
+          6600.0
+        ],
+        "length": 800.0,
+        "gw": 100.0
+      },
+      "groupId": "even/GL004",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "even/GL005",
+      "key": "even",
+      "name": "even-R121",
+      "memberIds": [
+        "even-R121"
+      ],
+      "sourceFace": "even-B2-F1406",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              33600.0,
+              9700.0
+            ],
+            [
+              33700.0,
+              9700.0
+            ],
+            [
+              33700.0,
+              8900.0
+            ],
+            [
+              33600.0,
+              8900.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 1,
+      "start": [
+        33650.0,
+        8900.0
+      ],
+      "end": [
+        33650.0,
+        9700.0
+      ],
+      "length": 800.0,
+      "gw": 100.0,
+      "width": 150.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "F6B5",
+          "text": "GL:100X850",
+          "at": [
+            33526.2,
+            8988.61
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 73.8
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3ADE",
+          "overlap": 1.0,
+          "width": 150.0,
+          "labels": [
+            {
+              "source": "3AE9",
+              "text": "150x450",
+              "at": [
+                33728.7,
+                8765.83
+              ],
+              "width": 150,
+              "height": 450,
+              "distance": 0.0
+            },
+            {
+              "source": "38B0",
+              "text": "200x450",
+              "at": [
+                33938.0,
+                9740.0
+              ],
+              "width": 200,
+              "height": 450,
+              "distance": 192.21
+            },
+            {
+              "source": "38E4",
+              "text": "200x500",
+              "at": [
+                34056.8,
+                8140.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 346.01
+            }
+          ]
+        }
+      ],
+      "thickness": 100,
+      "slabEvidence": [
+        {
+          "id": "even/even-R076",
+          "thickness": 100,
+          "distance": 50.0
+        },
+        {
+          "id": "even/even-R144",
+          "thickness": 100,
+          "distance": 200.0
+        },
+        {
+          "id": "even/even-R145",
+          "thickness": 100,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            33650.0,
+            8900.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            33650.0,
+            8899.5
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            33650.0,
+            9700.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            33650.0,
+            9700.5
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          33650.0,
+          8900.0
+        ],
+        "end": [
+          33650.0,
+          9700.0
+        ],
+        "length": 800.0,
+        "gw": 100.0
+      },
+      "groupId": "even/GL005",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "even/GL006",
+      "key": "even",
+      "name": "even-R122",
+      "memberIds": [
+        "even-R122"
+      ],
+      "sourceFace": "even-B2-F1410",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              33600.0,
+              6600.0
+            ],
+            [
+              33700.0,
+              6600.0
+            ],
+            [
+              33700.0,
+              5800.0
+            ],
+            [
+              33600.0,
+              5800.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 1,
+      "start": [
+        33650.0,
+        5800.0
+      ],
+      "end": [
+        33650.0,
+        6600.0
+      ],
+      "length": 800.0,
+      "gw": 100.0,
+      "width": 150.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "F6B6",
+          "text": "GL:100X850",
+          "at": [
+            33528.7,
+            5869.88
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 71.3
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3ADC",
+          "overlap": 1.0,
+          "width": 150.0,
+          "labels": [
+            {
+              "source": "3AE8",
+              "text": "150x450",
+              "at": [
+                33735.0,
+                6749.33
+              ],
+              "width": 150,
+              "height": 450,
+              "distance": 0.0
+            },
+            {
+              "source": "38B2",
+              "text": "200x450",
+              "at": [
+                33488.0,
+                5640.0
+              ],
+              "width": 200,
+              "height": 450,
+              "distance": 195.3
+            },
+            {
+              "source": "38E4",
+              "text": "200x500",
+              "at": [
+                34056.8,
+                8140.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 309.4
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "even/even-R005",
+          "thickness": 120,
+          "distance": 200.0
+        },
+        {
+          "id": "even/even-R081",
+          "thickness": 100,
+          "distance": 50.0
+        },
+        {
+          "id": "even/even-R146",
+          "thickness": 100,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            33650.0,
+            5800.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            33650.0,
+            5799.5
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            33650.0,
+            6600.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            33650.0,
+            6600.5
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          33650.0,
+          5800.0
+        ],
+        "end": [
+          33650.0,
+          6600.0
+        ],
+        "length": 800.0,
+        "gw": 100.0
+      },
+      "groupId": "even/GL006",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "even/GL007",
+      "key": "even",
+      "name": "even-R123",
+      "memberIds": [
+        "even-R123"
+      ],
+      "sourceFace": "even-B2-F1412",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              2900.0,
+              8200.0
+            ],
+            [
+              3800.0,
+              8200.0
+            ],
+            [
+              3800.0,
+              8100.0
+            ],
+            [
+              2900.0,
+              8100.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        2900.0,
+        8150.0
+      ],
+      "end": [
+        3800.0,
+        8150.0
+      ],
+      "length": 900.0,
+      "gw": 100.0,
+      "width": 200.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "F850",
+          "text": "GL:100X850",
+          "at": [
+            3067.89,
+            7911.35
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 188.65
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3820",
+          "overlap": 1.0,
+          "width": 200.0,
+          "labels": [
+            {
+              "source": "3821",
+              "text": "200x500",
+              "at": [
+                1780.98,
+                8140.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 0.0
+            },
+            {
+              "source": "3AE7",
+              "text": "150x450",
+              "at": [
+                2791.33,
+                8765.83
+              ],
+              "width": 150,
+              "height": 450,
+              "distance": 465.83
+            }
+          ]
+        }
+      ],
+      "thickness": 100,
+      "slabEvidence": [
+        {
+          "id": "even/even-R059",
+          "thickness": 100,
+          "distance": 250.0
+        },
+        {
+          "id": "even/even-R066",
+          "thickness": 100,
+          "distance": 269.258
+        },
+        {
+          "id": "even/even-R138",
+          "thickness": 100,
+          "distance": 100.0
+        },
+        {
+          "id": "even/even-R139",
+          "thickness": 100,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            2900.0,
+            8150.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            2899.5,
+            8150.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            3800.0,
+            8150.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            3800.5,
+            8150.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": true
+            },
+            {
+              "height": 2150.5,
+              "inside": true
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          2900.0,
+          8150.0
+        ],
+        "end": [
+          3800.0,
+          8150.0
+        ],
+        "length": 900.0,
+        "gw": 100.0
+      },
+      "groupId": "even/GL007",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "even/GL008",
+      "key": "even",
+      "name": "even-R124",
+      "memberIds": [
+        "even-R124"
+      ],
+      "sourceFace": "even-B2-F1415",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              7100.0,
+              8200.0
+            ],
+            [
+              7200.0,
+              8200.0
+            ],
+            [
+              8500.0,
+              8200.0
+            ],
+            [
+              8500.0,
+              8100.0
+            ],
+            [
+              7200.0,
+              8100.0
+            ],
+            [
+              5900.0,
+              8100.0
+            ],
+            [
+              5900.0,
+              8200.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        5900.0,
+        8150.0
+      ],
+      "end": [
+        8500.0,
+        8150.0
+      ],
+      "length": 2600.0,
+      "gw": 100.0,
+      "width": 200.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "11D84",
+          "text": "GL:100X850",
+          "at": [
+            6182.38,
+            7917.11
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 182.89
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "37E0",
+          "overlap": 1.0,
+          "width": 200.0,
+          "labels": [
+            {
+              "source": "37E1",
+              "text": "200x500",
+              "at": [
+                6188.0,
+                8140.05
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 0.0
+            }
+          ]
+        }
+      ],
+      "thickness": 100,
+      "slabEvidence": [
+        {
+          "id": "even/even-R064",
+          "thickness": 100,
+          "distance": 100.0
+        },
+        {
+          "id": "even/even-R134",
+          "thickness": 100,
+          "distance": 0.0
+        },
+        {
+          "id": "even/even-R137",
+          "thickness": 100,
+          "distance": 100.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            5900.0,
+            8150.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            5899.5,
+            8150.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            8500.0,
+            8150.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            8500.5,
+            8150.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": true
+            },
+            {
+              "height": 2150.5,
+              "inside": true
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          5900.0,
+          8150.0
+        ],
+        "end": [
+          8500.0,
+          8150.0
+        ],
+        "length": 2600.0,
+        "gw": 100.0
+      },
+      "groupId": "even/GL008",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "even/GL009",
+      "key": "even",
+      "name": "even-R125/even-R126",
+      "memberIds": [
+        "even-R125",
+        "even-R126"
+      ],
+      "sourceFace": "even-B2-F1419",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0,
+        3350.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              18650.0,
+              12200.0
+            ],
+            [
+              18650.0,
+              12300.0
+            ],
+            [
+              18750.0,
+              12300.0
+            ],
+            [
+              18850.0,
+              12300.0
+            ],
+            [
+              19450.0,
+              12300.0
+            ],
+            [
+              19450.0,
+              12200.0
+            ],
+            [
+              18850.0,
+              12200.0
+            ],
+            [
+              18750.0,
+              12200.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        18650.0,
+        12250.0
+      ],
+      "end": [
+        19450.0,
+        12250.0
+      ],
+      "length": 800.0,
+      "gw": 100.0,
+      "width": 150.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "11F5B",
+          "text": "GL:100X850",
+          "at": [
+            18912.9,
+            11985.9
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 214.1
+        },
+        {
+          "source": "11F5B",
+          "text": "GL:100X850",
+          "at": [
+            18912.9,
+            11985.9
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 214.1
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3802",
+          "overlap": 1.0,
+          "width": 150.0,
+          "labels": [
+            {
+              "source": "3803",
+              "text": "150x400",
+              "at": [
+                17946.0,
+                12215.0
+              ],
+              "width": 150,
+              "height": 400,
+              "distance": 0.0
+            },
+            {
+              "source": "3801",
+              "text": "200x500",
+              "at": [
+                16462.9,
+                12204.5
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 37.1
+            },
+            {
+              "source": "38C8",
+              "text": "200x500",
+              "at": [
+                20060.0,
+                12088.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 195.3
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "even/even-R164",
+          "thickness": 120,
+          "distance": 50.0
+        },
+        {
+          "id": "even/even-R167",
+          "thickness": 120,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            18650.0,
+            12250.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            18649.5,
+            12250.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": true
+            },
+            {
+              "height": 2150.5,
+              "inside": true
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            19450.0,
+            12250.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            19450.5,
+            12250.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          18650.0,
+          12250.0
+        ],
+        "end": [
+          19450.0,
+          12250.0
+        ],
+        "length": 800.0,
+        "gw": 100.0
+      },
+      "groupId": "even/GL009",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "even/GL010",
+      "key": "even",
+      "name": "even-R127",
+      "memberIds": [
+        "even-R127"
+      ],
+      "sourceFace": "even-B2-F1421",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              33500.0,
+              8100.0
+            ],
+            [
+              32600.0,
+              8100.0
+            ],
+            [
+              32600.0,
+              8200.0
+            ],
+            [
+              33500.0,
+              8200.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        32600.0,
+        8150.0
+      ],
+      "end": [
+        33500.0,
+        8150.0
+      ],
+      "length": 900.0,
+      "gw": 100.0,
+      "width": 200.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "120B2",
+          "text": "GL:100X850",
+          "at": [
+            32691.5,
+            7911.35
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 188.65
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3ADD",
+          "overlap": 1.0,
+          "width": 200.0,
+          "labels": [
+            {
+              "source": "38E4",
+              "text": "200x500",
+              "at": [
+                34056.8,
+                8140.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 0.0
+            },
+            {
+              "source": "3AE9",
+              "text": "150x450",
+              "at": [
+                33728.7,
+                8765.83
+              ],
+              "width": 150,
+              "height": 450,
+              "distance": 465.83
+            }
+          ]
+        }
+      ],
+      "thickness": 100,
+      "slabEvidence": [
+        {
+          "id": "even/even-R076",
+          "thickness": 100,
+          "distance": 269.258
+        },
+        {
+          "id": "even/even-R081",
+          "thickness": 100,
+          "distance": 250.0
+        },
+        {
+          "id": "even/even-R145",
+          "thickness": 100,
+          "distance": 100.0
+        },
+        {
+          "id": "even/even-R146",
+          "thickness": 100,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            32600.0,
+            8150.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            32599.5,
+            8150.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": true
+            },
+            {
+              "height": 2150.5,
+              "inside": true
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            33500.0,
+            8150.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            33500.5,
+            8150.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          32600.0,
+          8150.0
+        ],
+        "end": [
+          33500.0,
+          8150.0
+        ],
+        "length": 900.0,
+        "gw": 100.0
+      },
+      "groupId": "even/GL010",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "even/GL011",
+      "key": "even",
+      "name": "even-R128",
+      "memberIds": [
+        "even-R128"
+      ],
+      "sourceFace": "even-B2-F1424",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              29200.0,
+              8200.0
+            ],
+            [
+              29300.0,
+              8200.0
+            ],
+            [
+              30500.0,
+              8200.0
+            ],
+            [
+              30500.0,
+              8100.0
+            ],
+            [
+              29200.0,
+              8100.0
+            ],
+            [
+              27900.0,
+              8100.0
+            ],
+            [
+              27900.0,
+              8200.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        27900.0,
+        8150.0
+      ],
+      "end": [
+        30500.0,
+        8150.0
+      ],
+      "length": 2600.0,
+      "gw": 100.0,
+      "width": 200.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "120B8",
+          "text": "GL:100X850",
+          "at": [
+            29577.1,
+            7917.11
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 182.89
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "38A9",
+          "overlap": 1.0,
+          "width": 200.0,
+          "labels": [
+            {
+              "source": "38AA",
+              "text": "200x500",
+              "at": [
+                29688.0,
+                8140.05
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 0.0
+            }
+          ]
+        }
+      ],
+      "thickness": 100,
+      "slabEvidence": [
+        {
+          "id": "even/even-R074",
+          "thickness": 100,
+          "distance": 100.0
+        },
+        {
+          "id": "even/even-R142",
+          "thickness": 100,
+          "distance": 0.0
+        },
+        {
+          "id": "even/even-R143",
+          "thickness": 100,
+          "distance": 100.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            27900.0,
+            8150.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            27899.5,
+            8150.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": true
+            },
+            {
+              "height": 2150.5,
+              "inside": true
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            30500.0,
+            8150.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            30500.5,
+            8150.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          27900.0,
+          8150.0
+        ],
+        "end": [
+          30500.0,
+          8150.0
+        ],
+        "length": 2600.0,
+        "gw": 100.0
+      },
+      "groupId": "even/GL011",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "even/GL012",
+      "key": "even",
+      "name": "even-R129",
+      "memberIds": [
+        "even-R129"
+      ],
+      "sourceFace": "even-B2-F1425",
+      "bottom": 2250.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              15750.0,
+              13600.0
+            ],
+            [
+              14650.0,
+              13600.0
+            ],
+            [
+              14650.0,
+              13800.0
+            ],
+            [
+              15750.0,
+              13800.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        14650.0,
+        13700.0
+      ],
+      "end": [
+        15750.0,
+        13700.0
+      ],
+      "length": 1100.0,
+      "gw": 200.0,
+      "width": 200.0,
+      "height": 750,
+      "glHeightEvidence": [
+        {
+          "source": "11D9A",
+          "text": "GL:200X750",
+          "at": [
+            14860.5,
+            13843.5
+          ],
+          "width": 200,
+          "height": 750,
+          "distance": 43.5
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "37F4",
+          "overlap": 1.0,
+          "width": 200.0,
+          "labels": [
+            {
+              "source": "37F5",
+              "text": "200x500",
+              "at": [
+                14938.0,
+                13640.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 0.0
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "even/even-R162",
+          "thickness": 120,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            14650.0,
+            13700.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            14649.5,
+            13700.0
+          ],
+          "probes": [
+            {
+              "height": 2249.5,
+              "inside": true
+            },
+            {
+              "height": 2250.5,
+              "inside": true
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            15750.0,
+            13700.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            15750.5,
+            13700.0
+          ],
+          "probes": [
+            {
+              "height": 2249.5,
+              "inside": true
+            },
+            {
+              "height": 2250.5,
+              "inside": true
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          14650.0,
+          13700.0
+        ],
+        "end": [
+          15750.0,
+          13700.0
+        ],
+        "length": 1100.0,
+        "gw": 200.0
+      },
+      "groupId": "even/GL012",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "even/GL013",
+      "key": "even",
+      "name": "even-R130",
+      "memberIds": [
+        "even-R130"
+      ],
+      "sourceFace": "even-B2-F1426",
+      "bottom": 2250.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              15300.0,
+              11200.0
+            ],
+            [
+              15300.0,
+              10900.0
+            ],
+            [
+              14200.0,
+              10900.0
+            ],
+            [
+              14200.0,
+              11200.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        14200.0,
+        11050.0
+      ],
+      "end": [
+        15300.0,
+        11050.0
+      ],
+      "length": 1100.0,
+      "gw": 300.0,
+      "width": 300.0,
+      "height": 750,
+      "glHeightEvidence": [
+        {
+          "source": "11E03",
+          "text": "GL:300X750",
+          "at": [
+            14425.1,
+            11243.5
+          ],
+          "width": 300,
+          "height": 750,
+          "distance": 43.5
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "395A",
+          "overlap": 0.6666666666666666,
+          "width": 200.0,
+          "labels": [
+            {
+              "source": "3963",
+              "text": "200x700",
+              "at": [
+                17924.2,
+                10941.1
+              ],
+              "width": 200,
+              "height": 700,
+              "distance": 0.0
+            },
+            {
+              "source": "E4AA",
+              "text": "150x300",
+              "at": [
+                17650.0,
+                11365.7
+              ],
+              "width": 150,
+              "height": 300,
+              "distance": 265.7
+            },
+            {
+              "source": "E4B3",
+              "text": "150x300",
+              "at": [
+                18870.0,
+                11408.0
+              ],
+              "width": 150,
+              "height": 300,
+              "distance": 308.0
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "even/even-R136",
+          "thickness": 100,
+          "distance": 300.0
+        },
+        {
+          "id": "even/even-R162",
+          "thickness": 120,
+          "distance": 0.0
+        },
+        {
+          "id": "even/even-R165",
+          "thickness": 120,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            14200.0,
+            11050.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            14199.5,
+            11050.0
+          ],
+          "probes": [
+            {
+              "height": 2249.5,
+              "inside": true
+            },
+            {
+              "height": 2250.5,
+              "inside": true
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            15300.0,
+            11050.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            15300.5,
+            11050.0
+          ],
+          "probes": [
+            {
+              "height": 2249.5,
+              "inside": false
+            },
+            {
+              "height": 2250.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          14200.0,
+          11050.0
+        ],
+        "end": [
+          15300.0,
+          11050.0
+        ],
+        "length": 1100.0,
+        "gw": 300.0
+      },
+      "groupId": "even/GL013",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "even/GL014",
+      "key": "even",
+      "name": "even-R131",
+      "memberIds": [
+        "even-R131"
+      ],
+      "sourceFace": "even-B2-F1429",
+      "bottom": 2250.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              21400.0,
+              11100.0
+            ],
+            [
+              21400.0,
+              10900.0
+            ],
+            [
+              20300.0,
+              10900.0
+            ],
+            [
+              20300.0,
+              11100.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        20300.0,
+        11000.0
+      ],
+      "end": [
+        21400.0,
+        11000.0
+      ],
+      "length": 1100.0,
+      "gw": 200.0,
+      "width": 200.0,
+      "height": 750,
+      "glHeightEvidence": [
+        {
+          "source": "11F2D",
+          "text": "GL:200X750",
+          "at": [
+            20514.3,
+            11143.5
+          ],
+          "width": 200,
+          "height": 750,
+          "distance": 43.5
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "395A",
+          "overlap": 1.0,
+          "width": 200.0,
+          "labels": [
+            {
+              "source": "3963",
+              "text": "200x700",
+              "at": [
+                17924.2,
+                10941.1
+              ],
+              "width": 200,
+              "height": 700,
+              "distance": 0.0
+            },
+            {
+              "source": "E4AA",
+              "text": "150x300",
+              "at": [
+                17650.0,
+                11365.7
+              ],
+              "width": 150,
+              "height": 300,
+              "distance": 265.7
+            },
+            {
+              "source": "E4B3",
+              "text": "150x300",
+              "at": [
+                18870.0,
+                11408.0
+              ],
+              "width": 150,
+              "height": 300,
+              "distance": 308.0
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "even/even-R161",
+          "thickness": 120,
+          "distance": 0.0
+        },
+        {
+          "id": "even/even-R166",
+          "thickness": 120,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            20300.0,
+            11000.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            20299.5,
+            11000.0
+          ],
+          "probes": [
+            {
+              "height": 2249.5,
+              "inside": false
+            },
+            {
+              "height": 2250.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            21400.0,
+            11000.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            21400.5,
+            11000.0
+          ],
+          "probes": [
+            {
+              "height": 2249.5,
+              "inside": false
+            },
+            {
+              "height": 2250.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          20300.0,
+          11000.0
+        ],
+        "end": [
+          21400.0,
+          11000.0
+        ],
+        "length": 1100.0,
+        "gw": 200.0
+      },
+      "groupId": "even/GL014",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "even/GL015",
+      "key": "even",
+      "name": "even-R132",
+      "memberIds": [
+        "even-R132"
+      ],
+      "sourceFace": "even-B2-F1430",
+      "bottom": 2250.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              21750.0,
+              13600.0
+            ],
+            [
+              20650.0,
+              13600.0
+            ],
+            [
+              20650.0,
+              13800.0
+            ],
+            [
+              21750.0,
+              13800.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        20650.0,
+        13700.0
+      ],
+      "end": [
+        21750.0,
+        13700.0
+      ],
+      "length": 1100.0,
+      "gw": 200.0,
+      "width": 200.0,
+      "height": 750,
+      "glHeightEvidence": [
+        {
+          "source": "11F2F",
+          "text": "GL:200X750",
+          "at": [
+            20860.5,
+            13843.5
+          ],
+          "width": 200,
+          "height": 750,
+          "distance": 43.5
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "38BD",
+          "overlap": 1.0,
+          "width": 200.0,
+          "labels": [
+            {
+              "source": "38BE",
+              "text": "200x500",
+              "at": [
+                20938.0,
+                13640.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 0.0
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "even/even-R161",
+          "thickness": 120,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            20650.0,
+            13700.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            20649.5,
+            13700.0
+          ],
+          "probes": [
+            {
+              "height": 2249.5,
+              "inside": true
+            },
+            {
+              "height": 2250.5,
+              "inside": true
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            21750.0,
+            13700.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            21750.5,
+            13700.0
+          ],
+          "probes": [
+            {
+              "height": 2249.5,
+              "inside": true
+            },
+            {
+              "height": 2250.5,
+              "inside": true
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          20650.0,
+          13700.0
+        ],
+        "end": [
+          21750.0,
+          13700.0
+        ],
+        "length": 1100.0,
+        "gw": 200.0
+      },
+      "groupId": "even/GL015",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "even/GL016",
+      "key": "even",
+      "name": "even-R133",
+      "memberIds": [
+        "even-R133"
+      ],
+      "sourceFace": "even-B2-F1433",
+      "bottom": 2100.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              18650.0,
+              12300.0
+            ],
+            [
+              18650.0,
+              12200.0
+            ],
+            [
+              17750.0,
+              12200.0
+            ],
+            [
+              17750.0,
+              12300.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        17750.0,
+        12250.0
+      ],
+      "end": [
+        18650.0,
+        12250.0
+      ],
+      "length": 900.0,
+      "gw": 100.0,
+      "width": 150.0,
+      "height": 900,
+      "glHeightEvidence": [
+        {
+          "source": "11F52",
+          "text": "GL:100X900",
+          "at": [
+            17872.9,
+            11980.6
+          ],
+          "width": 100,
+          "height": 900,
+          "distance": 219.4
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3802",
+          "overlap": 1.0,
+          "width": 150.0,
+          "labels": [
+            {
+              "source": "3803",
+              "text": "150x400",
+              "at": [
+                17946.0,
+                12215.0
+              ],
+              "width": 150,
+              "height": 400,
+              "distance": 0.0
+            },
+            {
+              "source": "3801",
+              "text": "200x500",
+              "at": [
+                16462.9,
+                12204.5
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 37.1
+            },
+            {
+              "source": "38C8",
+              "text": "200x500",
+              "at": [
+                20060.0,
+                12088.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 195.3
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "even/even-R164",
+          "thickness": 120,
+          "distance": 50.0
+        },
+        {
+          "id": "even/even-R167",
+          "thickness": 120,
+          "distance": 250.0
+        },
+        {
+          "id": "even/even-R168",
+          "thickness": 120,
+          "distance": 250.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            17750.0,
+            12250.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            17749.5,
+            12250.0
+          ],
+          "probes": [
+            {
+              "height": 2099.5,
+              "inside": false
+            },
+            {
+              "height": 2100.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            18650.0,
+            12250.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            18650.5,
+            12250.0
+          ],
+          "probes": [
+            {
+              "height": 2099.5,
+              "inside": false
+            },
+            {
+              "height": 2100.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          17750.0,
+          12250.0
+        ],
+        "end": [
+          18650.0,
+          12250.0
+        ],
+        "length": 900.0,
+        "gw": 100.0
+      },
+      "groupId": "even/GL016",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "odd/GL001",
+      "key": "odd",
+      "name": "odd-R032/odd-R033",
+      "memberIds": [
+        "odd-R032",
+        "odd-R033"
+      ],
+      "sourceFace": "odd-B1-F289",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0,
+        3350.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              17550.0,
+              12200.0
+            ],
+            [
+              16825.0,
+              12200.0
+            ],
+            [
+              16825.0,
+              12300.0
+            ],
+            [
+              17650.0,
+              12300.0
+            ],
+            [
+              17750.0,
+              12300.0
+            ],
+            [
+              17750.0,
+              12200.0
+            ],
+            [
+              17650.0,
+              12200.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        16825.0,
+        12250.0
+      ],
+      "end": [
+        17750.0,
+        12250.0
+      ],
+      "length": 925.0,
+      "gw": 100.0,
+      "width": 150.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "29AC5",
+          "text": "GL:100X850",
+          "at": [
+            17074.0,
+            11991.9
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 208.1
+        },
+        {
+          "source": "29AC5",
+          "text": "GL:100X850",
+          "at": [
+            17074.0,
+            11991.9
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 208.1
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3EBB",
+          "overlap": 1.0,
+          "width": 150.0,
+          "labels": [
+            {
+              "source": "3EBC",
+              "text": "150x400",
+              "at": [
+                17946.0,
+                12215.0
+              ],
+              "width": 150,
+              "height": 400,
+              "distance": 0.0
+            },
+            {
+              "source": "3EBA",
+              "text": "200x500",
+              "at": [
+                16460.0,
+                12088.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 118.93
+            },
+            {
+              "source": "3F40",
+              "text": "200x500",
+              "at": [
+                20060.0,
+                12088.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 195.3
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "odd/odd-R155",
+          "thickness": 120,
+          "distance": 50.0
+        },
+        {
+          "id": "odd/odd-R158",
+          "thickness": 120,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            16825.0,
+            12250.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            16824.5,
+            12250.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            17750.0,
+            12250.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            17750.5,
+            12250.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": true
+            },
+            {
+              "height": 2150.5,
+              "inside": true
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          16825.0,
+          12250.0
+        ],
+        "end": [
+          17750.0,
+          12250.0
+        ],
+        "length": 925.0,
+        "gw": 100.0
+      },
+      "groupId": "odd/GL001",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "odd/GL002",
+      "key": "odd",
+      "name": "odd-R084/odd-R086",
+      "memberIds": [
+        "odd-R084",
+        "odd-R086"
+      ],
+      "sourceFace": "odd-B1-F587",
+      "bottom": 2500.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0,
+        3350.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              16500.0,
+              12200.0
+            ],
+            [
+              16500.0,
+              12300.0
+            ],
+            [
+              16600.0,
+              12300.0
+            ],
+            [
+              16825.0,
+              12300.0
+            ],
+            [
+              16825.0,
+              12200.0
+            ],
+            [
+              16700.0,
+              12200.0
+            ],
+            [
+              16600.0,
+              12200.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        16500.0,
+        12250.0
+      ],
+      "end": [
+        16825.0,
+        12250.0
+      ],
+      "length": 325.0,
+      "gw": 100.0,
+      "width": 150.0,
+      "height": 500,
+      "glHeightEvidence": [
+        {
+          "source": "120DA",
+          "text": "GL:100X500",
+          "at": [
+            16304.0,
+            11983.1
+          ],
+          "width": 100,
+          "height": 500,
+          "distance": 292.34
+        },
+        {
+          "source": "120DA",
+          "text": "GL:100X500",
+          "at": [
+            16304.0,
+            11983.1
+          ],
+          "width": 100,
+          "height": 500,
+          "distance": 292.34
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3EBB",
+          "overlap": 1.0,
+          "width": 150.0,
+          "labels": [
+            {
+              "source": "3EBC",
+              "text": "150x400",
+              "at": [
+                17946.0,
+                12215.0
+              ],
+              "width": 150,
+              "height": 400,
+              "distance": 0.0
+            },
+            {
+              "source": "3EBA",
+              "text": "200x500",
+              "at": [
+                16460.0,
+                12088.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 118.93
+            },
+            {
+              "source": "3F40",
+              "text": "200x500",
+              "at": [
+                20060.0,
+                12088.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 195.3
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "odd/odd-R155",
+          "thickness": 120,
+          "distance": 50.0
+        },
+        {
+          "id": "odd/odd-R156",
+          "thickness": 120,
+          "distance": 200.0
+        },
+        {
+          "id": "odd/odd-R158",
+          "thickness": 120,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            16500.0,
+            12250.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            16499.5,
+            12250.0
+          ],
+          "probes": [
+            {
+              "height": 2499.5,
+              "inside": false
+            },
+            {
+              "height": 2500.5,
+              "inside": true
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            16825.0,
+            12250.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            16825.5,
+            12250.0
+          ],
+          "probes": [
+            {
+              "height": 2499.5,
+              "inside": true
+            },
+            {
+              "height": 2500.5,
+              "inside": true
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          16500.0,
+          12250.0
+        ],
+        "end": [
+          16825.0,
+          12250.0
+        ],
+        "length": 325.0,
+        "gw": 100.0
+      },
+      "groupId": "odd/GL002",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "odd/GL003",
+      "key": "odd",
+      "name": "odd-R115",
+      "memberIds": [
+        "odd-R115"
+      ],
+      "sourceFace": "odd-B1-F1291",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              2800.0,
+              8900.0
+            ],
+            [
+              2700.0,
+              8900.0
+            ],
+            [
+              2700.0,
+              9700.0
+            ],
+            [
+              2800.0,
+              9700.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 1,
+      "start": [
+        2750.0,
+        8900.0
+      ],
+      "end": [
+        2750.0,
+        9700.0
+      ],
+      "length": 800.0,
+      "gw": 100.0,
+      "width": 150.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "F5EF",
+          "text": "GL:100X850",
+          "at": [
+            3020.0,
+            8988.61
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 220.0
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3ED9",
+          "overlap": 1.0,
+          "width": 150.0,
+          "labels": [
+            {
+              "source": "3EDA",
+              "text": "150x450",
+              "at": [
+                2791.0,
+                8765.83
+              ],
+              "width": 150,
+              "height": 450,
+              "distance": 0.0
+            }
+          ]
+        }
+      ],
+      "thickness": 100,
+      "slabEvidence": [
+        {
+          "id": "odd/odd-R064",
+          "thickness": 100,
+          "distance": 50.0
+        },
+        {
+          "id": "odd/odd-R131",
+          "thickness": 100,
+          "distance": 0.0
+        },
+        {
+          "id": "odd/odd-R132",
+          "thickness": 100,
+          "distance": 200.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            2750.0,
+            8900.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            2750.0,
+            8899.5
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            2750.0,
+            9700.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            2750.0,
+            9700.5
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          2750.0,
+          8900.0
+        ],
+        "end": [
+          2750.0,
+          9700.0
+        ],
+        "length": 800.0,
+        "gw": 100.0
+      },
+      "groupId": "odd/GL003",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "odd/GL004",
+      "key": "odd",
+      "name": "odd-R116",
+      "memberIds": [
+        "odd-R116"
+      ],
+      "sourceFace": "odd-B1-F1295",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              2800.0,
+              5800.0
+            ],
+            [
+              2700.0,
+              5800.0
+            ],
+            [
+              2700.0,
+              6600.0
+            ],
+            [
+              2800.0,
+              6600.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 1,
+      "start": [
+        2750.0,
+        5800.0
+      ],
+      "end": [
+        2750.0,
+        6600.0
+      ],
+      "length": 800.0,
+      "gw": 100.0,
+      "width": 150.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "F60A",
+          "text": "GL:100X850",
+          "at": [
+            3018.0,
+            5869.88
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 218.0
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3ECF",
+          "overlap": 1.0,
+          "width": 150.0,
+          "labels": [
+            {
+              "source": "3ED0",
+              "text": "150x450",
+              "at": [
+                2785.0,
+                6749.33
+              ],
+              "width": 150,
+              "height": 450,
+              "distance": 0.0
+            },
+            {
+              "source": "3EA8",
+              "text": "200x450",
+              "at": [
+                2388.0,
+                5640.0
+              ],
+              "width": 200,
+              "height": 450,
+              "distance": 306.99
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "odd/odd-R004",
+          "thickness": 120,
+          "distance": 200.0
+        },
+        {
+          "id": "odd/odd-R045",
+          "thickness": 100,
+          "distance": 50.0
+        },
+        {
+          "id": "odd/odd-R135",
+          "thickness": 100,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            2750.0,
+            5800.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            2750.0,
+            5799.5
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            2750.0,
+            6600.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            2750.0,
+            6600.5
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          2750.0,
+          5800.0
+        ],
+        "end": [
+          2750.0,
+          6600.0
+        ],
+        "length": 800.0,
+        "gw": 100.0
+      },
+      "groupId": "odd/GL004",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "odd/GL005",
+      "key": "odd",
+      "name": "odd-R117",
+      "memberIds": [
+        "odd-R117"
+      ],
+      "sourceFace": "odd-B1-F1299",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              33600.0,
+              9700.0
+            ],
+            [
+              33700.0,
+              9700.0
+            ],
+            [
+              33700.0,
+              8900.0
+            ],
+            [
+              33600.0,
+              8900.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 1,
+      "start": [
+        33650.0,
+        8900.0
+      ],
+      "end": [
+        33650.0,
+        9700.0
+      ],
+      "length": 800.0,
+      "gw": 100.0,
+      "width": 150.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "F621",
+          "text": "GL:100X850",
+          "at": [
+            33526.0,
+            8988.61
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 74.0
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3F59",
+          "overlap": 1.0,
+          "width": 150.0,
+          "labels": [
+            {
+              "source": "3F5A",
+              "text": "150x450",
+              "at": [
+                33729.0,
+                8765.83
+              ],
+              "width": 150,
+              "height": 450,
+              "distance": 0.0
+            },
+            {
+              "source": "3F2E",
+              "text": "200x450",
+              "at": [
+                33938.0,
+                9740.0
+              ],
+              "width": 200,
+              "height": 450,
+              "distance": 192.21
+            },
+            {
+              "source": "3F56",
+              "text": "200x500",
+              "at": [
+                34095.0,
+                8140.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 380.3
+            }
+          ]
+        }
+      ],
+      "thickness": 100,
+      "slabEvidence": [
+        {
+          "id": "odd/odd-R074",
+          "thickness": 100,
+          "distance": 50.0
+        },
+        {
+          "id": "odd/odd-R138",
+          "thickness": 100,
+          "distance": 0.0
+        },
+        {
+          "id": "odd/odd-R142",
+          "thickness": 100,
+          "distance": 200.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            33650.0,
+            8900.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            33650.0,
+            8899.5
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            33650.0,
+            9700.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            33650.0,
+            9700.5
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          33650.0,
+          8900.0
+        ],
+        "end": [
+          33650.0,
+          9700.0
+        ],
+        "length": 800.0,
+        "gw": 100.0
+      },
+      "groupId": "odd/GL005",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "odd/GL006",
+      "key": "odd",
+      "name": "odd-R118",
+      "memberIds": [
+        "odd-R118"
+      ],
+      "sourceFace": "odd-B1-F1303",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              33600.0,
+              6600.0
+            ],
+            [
+              33700.0,
+              6600.0
+            ],
+            [
+              33700.0,
+              5800.0
+            ],
+            [
+              33600.0,
+              5800.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 1,
+      "start": [
+        33650.0,
+        5800.0
+      ],
+      "end": [
+        33650.0,
+        6600.0
+      ],
+      "length": 800.0,
+      "gw": 100.0,
+      "width": 150.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "F622",
+          "text": "GL:100X850",
+          "at": [
+            33529.0,
+            5869.88
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 71.0
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3F51",
+          "overlap": 1.0,
+          "width": 150.0,
+          "labels": [
+            {
+              "source": "3F52",
+              "text": "150x450",
+              "at": [
+                33735.0,
+                6749.33
+              ],
+              "width": 150,
+              "height": 450,
+              "distance": 0.0
+            },
+            {
+              "source": "3F30",
+              "text": "200x450",
+              "at": [
+                33488.0,
+                5640.0
+              ],
+              "width": 200,
+              "height": 450,
+              "distance": 195.3
+            },
+            {
+              "source": "3F56",
+              "text": "200x500",
+              "at": [
+                34095.0,
+                8140.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 347.31
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "odd/odd-R002",
+          "thickness": 120,
+          "distance": 200.0
+        },
+        {
+          "id": "odd/odd-R091",
+          "thickness": 100,
+          "distance": 50.0
+        },
+        {
+          "id": "odd/odd-R139",
+          "thickness": 100,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            33650.0,
+            5800.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            33650.0,
+            5799.5
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            33650.0,
+            6600.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            33650.0,
+            6600.5
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          33650.0,
+          5800.0
+        ],
+        "end": [
+          33650.0,
+          6600.0
+        ],
+        "length": 800.0,
+        "gw": 100.0
+      },
+      "groupId": "odd/GL006",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "odd/GL007",
+      "key": "odd",
+      "name": "odd-R119",
+      "memberIds": [
+        "odd-R119"
+      ],
+      "sourceFace": "odd-B1-F1305",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              2900.0,
+              8200.0
+            ],
+            [
+              3800.0,
+              8200.0
+            ],
+            [
+              3800.0,
+              8100.0
+            ],
+            [
+              2900.0,
+              8100.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        2900.0,
+        8150.0
+      ],
+      "end": [
+        3800.0,
+        8150.0
+      ],
+      "length": 900.0,
+      "gw": 100.0,
+      "width": 200.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "120BB",
+          "text": "GL:100X850",
+          "at": [
+            3068.0,
+            7911.35
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 188.65
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3ED3",
+          "overlap": 1.0,
+          "width": 200.0,
+          "labels": [
+            {
+              "source": "3ED4",
+              "text": "200x500",
+              "at": [
+                1781.0,
+                8140.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 0.0
+            },
+            {
+              "source": "3EDA",
+              "text": "150x450",
+              "at": [
+                2791.0,
+                8765.83
+              ],
+              "width": 150,
+              "height": 450,
+              "distance": 465.83
+            }
+          ]
+        }
+      ],
+      "thickness": 100,
+      "slabEvidence": [
+        {
+          "id": "odd/odd-R045",
+          "thickness": 100,
+          "distance": 250.0
+        },
+        {
+          "id": "odd/odd-R064",
+          "thickness": 100,
+          "distance": 269.258
+        },
+        {
+          "id": "odd/odd-R131",
+          "thickness": 100,
+          "distance": 100.0
+        },
+        {
+          "id": "odd/odd-R135",
+          "thickness": 100,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            2900.0,
+            8150.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            2899.5,
+            8150.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            3800.0,
+            8150.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            3800.5,
+            8150.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": true
+            },
+            {
+              "height": 2150.5,
+              "inside": true
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          2900.0,
+          8150.0
+        ],
+        "end": [
+          3800.0,
+          8150.0
+        ],
+        "length": 900.0,
+        "gw": 100.0
+      },
+      "groupId": "odd/GL007",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "odd/GL008",
+      "key": "odd",
+      "name": "odd-R120",
+      "memberIds": [
+        "odd-R120"
+      ],
+      "sourceFace": "odd-B1-F1308",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              7100.0,
+              8200.0
+            ],
+            [
+              7200.0,
+              8200.0
+            ],
+            [
+              8500.0,
+              8200.0
+            ],
+            [
+              8500.0,
+              8100.0
+            ],
+            [
+              7200.0,
+              8100.0
+            ],
+            [
+              5900.0,
+              8100.0
+            ],
+            [
+              5900.0,
+              8200.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        5900.0,
+        8150.0
+      ],
+      "end": [
+        8500.0,
+        8150.0
+      ],
+      "length": 2600.0,
+      "gw": 100.0,
+      "width": 200.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "120C1",
+          "text": "GL:100X850",
+          "at": [
+            6182.0,
+            7917.11
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 182.89
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3E9F",
+          "overlap": 1.0,
+          "width": 200.0,
+          "labels": [
+            {
+              "source": "3EA0",
+              "text": "200x500",
+              "at": [
+                6188.0,
+                8140.05
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 0.0
+            }
+          ]
+        }
+      ],
+      "thickness": 100,
+      "slabEvidence": [
+        {
+          "id": "odd/odd-R062",
+          "thickness": 100,
+          "distance": 100.0
+        },
+        {
+          "id": "odd/odd-R133",
+          "thickness": 100,
+          "distance": 100.0
+        },
+        {
+          "id": "odd/odd-R134",
+          "thickness": 100,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            5900.0,
+            8150.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            5899.5,
+            8150.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            8500.0,
+            8150.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            8500.5,
+            8150.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": true
+            },
+            {
+              "height": 2150.5,
+              "inside": true
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          5900.0,
+          8150.0
+        ],
+        "end": [
+          8500.0,
+          8150.0
+        ],
+        "length": 2600.0,
+        "gw": 100.0
+      },
+      "groupId": "odd/GL008",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "odd/GL009",
+      "key": "odd",
+      "name": "odd-R121/odd-R122",
+      "memberIds": [
+        "odd-R121",
+        "odd-R122"
+      ],
+      "sourceFace": "odd-B1-F1312",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0,
+        3350.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              18650.0,
+              12200.0
+            ],
+            [
+              18650.0,
+              12300.0
+            ],
+            [
+              18750.0,
+              12300.0
+            ],
+            [
+              19450.0,
+              12300.0
+            ],
+            [
+              19450.0,
+              12200.0
+            ],
+            [
+              18850.0,
+              12200.0
+            ],
+            [
+              18750.0,
+              12200.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        18650.0,
+        12250.0
+      ],
+      "end": [
+        19450.0,
+        12250.0
+      ],
+      "length": 800.0,
+      "gw": 100.0,
+      "width": 150.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "120D4",
+          "text": "GL:100X850",
+          "at": [
+            18913.0,
+            11985.9
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 214.1
+        },
+        {
+          "source": "120D4",
+          "text": "GL:100X850",
+          "at": [
+            18913.0,
+            11985.9
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 214.1
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3EBB",
+          "overlap": 1.0,
+          "width": 150.0,
+          "labels": [
+            {
+              "source": "3EBC",
+              "text": "150x400",
+              "at": [
+                17946.0,
+                12215.0
+              ],
+              "width": 150,
+              "height": 400,
+              "distance": 0.0
+            },
+            {
+              "source": "3EBA",
+              "text": "200x500",
+              "at": [
+                16460.0,
+                12088.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 118.93
+            },
+            {
+              "source": "3F40",
+              "text": "200x500",
+              "at": [
+                20060.0,
+                12088.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 195.3
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "odd/odd-R155",
+          "thickness": 120,
+          "distance": 50.0
+        },
+        {
+          "id": "odd/odd-R157",
+          "thickness": 120,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            18650.0,
+            12250.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            18649.5,
+            12250.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": true
+            },
+            {
+              "height": 2150.5,
+              "inside": true
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            19450.0,
+            12250.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            19450.5,
+            12250.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          18650.0,
+          12250.0
+        ],
+        "end": [
+          19450.0,
+          12250.0
+        ],
+        "length": 800.0,
+        "gw": 100.0
+      },
+      "groupId": "odd/GL009",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "odd/GL010",
+      "key": "odd",
+      "name": "odd-R123",
+      "memberIds": [
+        "odd-R123"
+      ],
+      "sourceFace": "odd-B1-F1314",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              33500.0,
+              8100.0
+            ],
+            [
+              32600.0,
+              8100.0
+            ],
+            [
+              32600.0,
+              8200.0
+            ],
+            [
+              33500.0,
+              8200.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        32600.0,
+        8150.0
+      ],
+      "end": [
+        33500.0,
+        8150.0
+      ],
+      "length": 900.0,
+      "gw": 100.0,
+      "width": 200.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "120DE",
+          "text": "GL:100X850",
+          "at": [
+            32692.0,
+            7911.35
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 188.65
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3F55",
+          "overlap": 1.0,
+          "width": 200.0,
+          "labels": [
+            {
+              "source": "3F56",
+              "text": "200x500",
+              "at": [
+                34095.0,
+                8140.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 0.0
+            },
+            {
+              "source": "3F5A",
+              "text": "150x450",
+              "at": [
+                33729.0,
+                8765.83
+              ],
+              "width": 150,
+              "height": 450,
+              "distance": 465.83
+            }
+          ]
+        }
+      ],
+      "thickness": 100,
+      "slabEvidence": [
+        {
+          "id": "odd/odd-R074",
+          "thickness": 100,
+          "distance": 269.258
+        },
+        {
+          "id": "odd/odd-R091",
+          "thickness": 100,
+          "distance": 250.0
+        },
+        {
+          "id": "odd/odd-R138",
+          "thickness": 100,
+          "distance": 100.0
+        },
+        {
+          "id": "odd/odd-R139",
+          "thickness": 100,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            32600.0,
+            8150.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            32599.5,
+            8150.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": true
+            },
+            {
+              "height": 2150.5,
+              "inside": true
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            33500.0,
+            8150.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            33500.5,
+            8150.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          32600.0,
+          8150.0
+        ],
+        "end": [
+          33500.0,
+          8150.0
+        ],
+        "length": 900.0,
+        "gw": 100.0
+      },
+      "groupId": "odd/GL010",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "odd/GL011",
+      "key": "odd",
+      "name": "odd-R124",
+      "memberIds": [
+        "odd-R124"
+      ],
+      "sourceFace": "odd-B1-F1317",
+      "bottom": 2150.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              29200.0,
+              8200.0
+            ],
+            [
+              29300.0,
+              8200.0
+            ],
+            [
+              30500.0,
+              8200.0
+            ],
+            [
+              30500.0,
+              8100.0
+            ],
+            [
+              29200.0,
+              8100.0
+            ],
+            [
+              27900.0,
+              8100.0
+            ],
+            [
+              27900.0,
+              8200.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        27900.0,
+        8150.0
+      ],
+      "end": [
+        30500.0,
+        8150.0
+      ],
+      "length": 2600.0,
+      "gw": 100.0,
+      "width": 200.0,
+      "height": 850,
+      "glHeightEvidence": [
+        {
+          "source": "120E4",
+          "text": "GL:100X850",
+          "at": [
+            29577.0,
+            7917.11
+          ],
+          "width": 100,
+          "height": 850,
+          "distance": 182.89
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3F27",
+          "overlap": 1.0,
+          "width": 200.0,
+          "labels": [
+            {
+              "source": "3F28",
+              "text": "200x500",
+              "at": [
+                29688.0,
+                8140.05
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 0.0
+            }
+          ]
+        }
+      ],
+      "thickness": 100,
+      "slabEvidence": [
+        {
+          "id": "odd/odd-R072",
+          "thickness": 100,
+          "distance": 100.0
+        },
+        {
+          "id": "odd/odd-R140",
+          "thickness": 100,
+          "distance": 0.0
+        },
+        {
+          "id": "odd/odd-R141",
+          "thickness": 100,
+          "distance": 100.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            27900.0,
+            8150.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            27899.5,
+            8150.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": true
+            },
+            {
+              "height": 2150.5,
+              "inside": true
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            30500.0,
+            8150.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            30500.5,
+            8150.0
+          ],
+          "probes": [
+            {
+              "height": 2149.5,
+              "inside": false
+            },
+            {
+              "height": 2150.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          27900.0,
+          8150.0
+        ],
+        "end": [
+          30500.0,
+          8150.0
+        ],
+        "length": 2600.0,
+        "gw": 100.0
+      },
+      "groupId": "odd/GL011",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "odd/GL012",
+      "key": "odd",
+      "name": "odd-R125",
+      "memberIds": [
+        "odd-R125"
+      ],
+      "sourceFace": "odd-B1-F1318",
+      "bottom": 2250.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              15750.0,
+              13600.0
+            ],
+            [
+              14650.0,
+              13600.0
+            ],
+            [
+              14650.0,
+              13800.0
+            ],
+            [
+              15750.0,
+              13800.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        14650.0,
+        13700.0
+      ],
+      "end": [
+        15750.0,
+        13700.0
+      ],
+      "length": 1100.0,
+      "gw": 200.0,
+      "width": 200.0,
+      "height": 750,
+      "glHeightEvidence": [
+        {
+          "source": "120C4",
+          "text": "GL:200X750",
+          "at": [
+            14860.0,
+            13843.5
+          ],
+          "width": 200,
+          "height": 750,
+          "distance": 43.5
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3EAD",
+          "overlap": 1.0,
+          "width": 200.0,
+          "labels": [
+            {
+              "source": "3EAE",
+              "text": "200x500",
+              "at": [
+                14938.0,
+                13640.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 0.0
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "odd/odd-R156",
+          "thickness": 120,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            14650.0,
+            13700.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            14649.5,
+            13700.0
+          ],
+          "probes": [
+            {
+              "height": 2249.5,
+              "inside": true
+            },
+            {
+              "height": 2250.5,
+              "inside": true
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            15750.0,
+            13700.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            15750.5,
+            13700.0
+          ],
+          "probes": [
+            {
+              "height": 2249.5,
+              "inside": true
+            },
+            {
+              "height": 2250.5,
+              "inside": true
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          14650.0,
+          13700.0
+        ],
+        "end": [
+          15750.0,
+          13700.0
+        ],
+        "length": 1100.0,
+        "gw": 200.0
+      },
+      "groupId": "odd/GL012",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "odd/GL013",
+      "key": "odd",
+      "name": "odd-R126",
+      "memberIds": [
+        "odd-R126"
+      ],
+      "sourceFace": "odd-B1-F1319",
+      "bottom": 2250.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              15300.0,
+              11200.0
+            ],
+            [
+              15300.0,
+              10900.0
+            ],
+            [
+              14200.0,
+              10900.0
+            ],
+            [
+              14200.0,
+              11200.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        14200.0,
+        11050.0
+      ],
+      "end": [
+        15300.0,
+        11050.0
+      ],
+      "length": 1100.0,
+      "gw": 300.0,
+      "width": 300.0,
+      "height": 750,
+      "glHeightEvidence": [
+        {
+          "source": "120C6",
+          "text": "GL:300X750",
+          "at": [
+            14425.0,
+            11243.5
+          ],
+          "width": 300,
+          "height": 750,
+          "distance": 43.5
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3ED7",
+          "overlap": 0.6666666666666666,
+          "width": 200.0,
+          "labels": [
+            {
+              "source": "3ED8",
+              "text": "200x700",
+              "at": [
+                17924.0,
+                10941.1
+              ],
+              "width": 200,
+              "height": 700,
+              "distance": 0.0
+            },
+            {
+              "source": "E825",
+              "text": "150x300",
+              "at": [
+                17650.0,
+                11365.7
+              ],
+              "width": 150,
+              "height": 300,
+              "distance": 265.7
+            },
+            {
+              "source": "E826",
+              "text": "150x300",
+              "at": [
+                18870.0,
+                11408.0
+              ],
+              "width": 150,
+              "height": 300,
+              "distance": 308.0
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "odd/odd-R137",
+          "thickness": 100,
+          "distance": 300.0
+        },
+        {
+          "id": "odd/odd-R156",
+          "thickness": 120,
+          "distance": 0.0
+        },
+        {
+          "id": "odd/odd-R159",
+          "thickness": 120,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            14200.0,
+            11050.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            14199.5,
+            11050.0
+          ],
+          "probes": [
+            {
+              "height": 2249.5,
+              "inside": true
+            },
+            {
+              "height": 2250.5,
+              "inside": true
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            15300.0,
+            11050.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            15300.5,
+            11050.0
+          ],
+          "probes": [
+            {
+              "height": 2249.5,
+              "inside": false
+            },
+            {
+              "height": 2250.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          14200.0,
+          11050.0
+        ],
+        "end": [
+          15300.0,
+          11050.0
+        ],
+        "length": 1100.0,
+        "gw": 300.0
+      },
+      "groupId": "odd/GL013",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "odd/GL014",
+      "key": "odd",
+      "name": "odd-R127",
+      "memberIds": [
+        "odd-R127"
+      ],
+      "sourceFace": "odd-B1-F1322",
+      "bottom": 2250.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              21400.0,
+              11100.0
+            ],
+            [
+              21400.0,
+              10900.0
+            ],
+            [
+              20300.0,
+              10900.0
+            ],
+            [
+              20300.0,
+              11100.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        20300.0,
+        11000.0
+      ],
+      "end": [
+        21400.0,
+        11000.0
+      ],
+      "length": 1100.0,
+      "gw": 200.0,
+      "width": 200.0,
+      "height": 750,
+      "glHeightEvidence": [
+        {
+          "source": "120D0",
+          "text": "GL:200X750",
+          "at": [
+            20514.0,
+            11143.5
+          ],
+          "width": 200,
+          "height": 750,
+          "distance": 43.5
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3ED7",
+          "overlap": 1.0,
+          "width": 200.0,
+          "labels": [
+            {
+              "source": "3ED8",
+              "text": "200x700",
+              "at": [
+                17924.0,
+                10941.1
+              ],
+              "width": 200,
+              "height": 700,
+              "distance": 0.0
+            },
+            {
+              "source": "E825",
+              "text": "150x300",
+              "at": [
+                17650.0,
+                11365.7
+              ],
+              "width": 150,
+              "height": 300,
+              "distance": 265.7
+            },
+            {
+              "source": "E826",
+              "text": "150x300",
+              "at": [
+                18870.0,
+                11408.0
+              ],
+              "width": 150,
+              "height": 300,
+              "distance": 308.0
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "odd/odd-R154",
+          "thickness": 120,
+          "distance": 0.0
+        },
+        {
+          "id": "odd/odd-R160",
+          "thickness": 120,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            20300.0,
+            11000.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            20299.5,
+            11000.0
+          ],
+          "probes": [
+            {
+              "height": 2249.5,
+              "inside": false
+            },
+            {
+              "height": 2250.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            21400.0,
+            11000.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            21400.5,
+            11000.0
+          ],
+          "probes": [
+            {
+              "height": 2249.5,
+              "inside": false
+            },
+            {
+              "height": 2250.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          20300.0,
+          11000.0
+        ],
+        "end": [
+          21400.0,
+          11000.0
+        ],
+        "length": 1100.0,
+        "gw": 200.0
+      },
+      "groupId": "odd/GL014",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "odd/GL015",
+      "key": "odd",
+      "name": "odd-R128",
+      "memberIds": [
+        "odd-R128"
+      ],
+      "sourceFace": "odd-B1-F1323",
+      "bottom": 2250.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              21750.0,
+              13600.0
+            ],
+            [
+              20650.0,
+              13600.0
+            ],
+            [
+              20650.0,
+              13800.0
+            ],
+            [
+              21750.0,
+              13800.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        20650.0,
+        13700.0
+      ],
+      "end": [
+        21750.0,
+        13700.0
+      ],
+      "length": 1100.0,
+      "gw": 200.0,
+      "width": 200.0,
+      "height": 750,
+      "glHeightEvidence": [
+        {
+          "source": "120D2",
+          "text": "GL:200X750",
+          "at": [
+            20860.0,
+            13843.5
+          ],
+          "width": 200,
+          "height": 750,
+          "distance": 43.5
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3F35",
+          "overlap": 1.0,
+          "width": 200.0,
+          "labels": [
+            {
+              "source": "3F36",
+              "text": "200x500",
+              "at": [
+                20938.0,
+                13640.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 0.0
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "odd/odd-R154",
+          "thickness": 120,
+          "distance": 0.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            20650.0,
+            13700.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            20649.5,
+            13700.0
+          ],
+          "probes": [
+            {
+              "height": 2249.5,
+              "inside": true
+            },
+            {
+              "height": 2250.5,
+              "inside": true
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            21750.0,
+            13700.0
+          ],
+          "type": "yin",
+          "evidence": "端外探测到相邻原生实体，接墙/梁端",
+          "probeXY": [
+            21750.5,
+            13700.0
+          ],
+          "probes": [
+            {
+              "height": 2249.5,
+              "inside": true
+            },
+            {
+              "height": 2250.5,
+              "inside": true
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          20650.0,
+          13700.0
+        ],
+        "end": [
+          21750.0,
+          13700.0
+        ],
+        "length": 1100.0,
+        "gw": 200.0
+      },
+      "groupId": "odd/GL015",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    },
+    {
+      "id": "odd/GL016",
+      "key": "odd",
+      "name": "odd-R129",
+      "memberIds": [
+        "odd-R129"
+      ],
+      "sourceFace": "odd-B1-F1326",
+      "bottom": 2100.0,
+      "nativeBase": 0.0,
+      "sourceTops": [
+        3000.0
+      ],
+      "region": [
+        {
+          "polygon": [
+            [
+              18650.0,
+              12300.0
+            ],
+            [
+              18650.0,
+              12200.0
+            ],
+            [
+              17750.0,
+              12200.0
+            ],
+            [
+              17750.0,
+              12300.0
+            ]
+          ],
+          "holes": []
+        }
+      ],
+      "axis": 0,
+      "start": [
+        17750.0,
+        12250.0
+      ],
+      "end": [
+        18650.0,
+        12250.0
+      ],
+      "length": 900.0,
+      "gw": 100.0,
+      "width": 150.0,
+      "height": 900,
+      "glHeightEvidence": [
+        {
+          "source": "120D3",
+          "text": "GL:100X900",
+          "at": [
+            17873.0,
+            11980.6
+          ],
+          "width": 100,
+          "height": 900,
+          "distance": 219.4
+        }
+      ],
+      "widthEvidence": [
+        {
+          "source": "3EBB",
+          "overlap": 1.0,
+          "width": 150.0,
+          "labels": [
+            {
+              "source": "3EBC",
+              "text": "150x400",
+              "at": [
+                17946.0,
+                12215.0
+              ],
+              "width": 150,
+              "height": 400,
+              "distance": 0.0
+            },
+            {
+              "source": "3EBA",
+              "text": "200x500",
+              "at": [
+                16460.0,
+                12088.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 118.93
+            },
+            {
+              "source": "3F40",
+              "text": "200x500",
+              "at": [
+                20060.0,
+                12088.0
+              ],
+              "width": 200,
+              "height": 500,
+              "distance": 195.3
+            }
+          ]
+        }
+      ],
+      "thickness": 120,
+      "slabEvidence": [
+        {
+          "id": "odd/odd-R155",
+          "thickness": 120,
+          "distance": 50.0
+        },
+        {
+          "id": "odd/odd-R157",
+          "thickness": 120,
+          "distance": 250.0
+        },
+        {
+          "id": "odd/odd-R158",
+          "thickness": 120,
+          "distance": 250.0
+        }
+      ],
+      "ends": [
+        {
+          "side": "start",
+          "at": [
+            17750.0,
+            12250.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            17749.5,
+            12250.0
+          ],
+          "probes": [
+            {
+              "height": 2099.5,
+              "inside": false
+            },
+            {
+              "height": 2100.5,
+              "inside": false
+            }
+          ]
+        },
+        {
+          "side": "end",
+          "at": [
+            18650.0,
+            12250.0
+          ],
+          "type": "yang",
+          "evidence": "端外无原生实体，GL凸出端",
+          "probeXY": [
+            18650.5,
+            12250.0
+          ],
+          "probes": [
+            {
+              "height": 2099.5,
+              "inside": false
+            },
+            {
+              "height": 2100.5,
+              "inside": false
+            }
+          ]
+        }
+      ],
+      "issues": [],
+      "path": {
+        "type": "line",
+        "start": [
+          17750.0,
+          12250.0
+        ],
+        "end": [
+          18650.0,
+          12250.0
+        ],
+        "length": 900.0,
+        "gw": 100.0
+      },
+      "groupId": "odd/GL016",
+      "junctionOnly": true,
+      "sameHeightOnly": true
+    }
+  ],
+  "supersededRules": [
+    "指定梁号／坐标的楼梯轴线覆盖已由通用几何识别替代"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "ordinary": {
+    "beams": 179,
+    "beamGroups": 115,
+    "exemptGroups": 0,
+    "exemptParts": 60,
+    "passedGroups": 102,
+    "partialGroups": 8,
+    "pendingGroups": 5,
+    "passed": 142,
+    "pending": 37,
+    "zero": 18,
+    "uniqueModelPoints": 348,
+    "junctionPoints": 10,
+    "pendingJunctions": 16,
+    "excludedJunctions": 36,
+    "pendingRegions": 0
+  },
+  "landings": {
+    "total": 696,
+    "found": 335,
+    "missing": 117,
+    "review": 244,
+    "crossLayer": 21
+  },
+  "floor": {
+    "floors": 93,
+    "passed": 75,
+    "exempt": 18,
+    "pending": 0,
+    "uniqueModelPoints": 332
+  },
+  "floorLandings": {
+    "total": 664,
+    "found": 476,
+    "missing": 188,
+    "review": 0,
+    "crossLayer": 44
+  },
+  "positionsOnly": true,
+  "numericToleranceMm": 1e-09,
+  "displaySwitchesDoNotChangeExport": true,
+  "csvRows": 696,
+  "restoredExamples": [
+    "even-R007",
+    "even-R157"
+  ],
+  "orangeCarveShapesInEachExample": 0,
+  "rightStepsExplainYangAndActualBeamOverlap": true,
+  "browserErrors": []
+}

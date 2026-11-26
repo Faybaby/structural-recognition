@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "yangFormulaExamples": [
+    190,
+    220,
+    200
+  ],
+  "registeredInputs": true,
+  "allDefaultNodesNativeFacePassed": true,
+  "allDefaultFloorCoveragePassed": true,
+  "actualHangingRectangleCenters": true,
+  "sharedPairs": 569,
+  "arcCenterlineLengthAndHalfPoint": true,
+  "height3600RequiredGroups": 44,
+  "missingRulesStopCalculation": true,
+  "baselineActuallyChangesCoordinates": true,
+  "defaultNodes": [
+    645,
+    674
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "proposals": {
+    "total": 38,
+    "candidate": 6,
+    "protectedWidth": 32,
+    "review": 0
+  },
+  "allAppliedFalse": true,
+  "widthStepProtected": true,
+  "sameCategoryOnly": true,
+  "threshold50Inclusive": true,
+  "floorGeometryAndLandingAlgorithmsUnchanged": true,
+  "beamGLLRangeAuthorizedChange": [
+    50,
+    80
+  ],
+  "hashes": {
+    "data.json": "b23718d9d970428a412d2d6b55b600c992cf458a7640733103ff41fed3dc1c1c",
+    "floor-input.json": "a318bacd188706c15b5a08f65cf97bb3cc2d820b10782ff0ae81109b506fd187",
+    "floor-core.js": "b105ba69fbfe574ef8149ffb6001f914b2b8ec9be74b2de4ae2c7a9ac5989202",
+    "landing-core.js": "460221623015d217863771595c3d46a5bfc0345c219667201be981fd3516dbb4"
+  },
+  "checks": [
+    "width-direction synthetic50mm step protected",
+    "length-direction step listed only",
+    "51mm step excluded",
+    "cross-category neighbor excluded",
+    "original geometry/floor/landing unchanged; beam range authorized separately"
+  ]
+}

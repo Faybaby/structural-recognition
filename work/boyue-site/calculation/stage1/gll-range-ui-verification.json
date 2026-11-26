@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "browserExport": "铂悦府6号_挂梁支撑计算 (6).json",
+  "largeRange": [
+    50,
+    80
+  ],
+  "preferred": 50,
+  "dualYangExample": {
+    "id": "even/GL014",
+    "gw": 200,
+    "endOffsets": [
+      50,
+      50
+    ],
+    "gtt": 1000
+  },
+  "positionsOnly": true,
+  "landings": {
+    "total": 88,
+    "found": 66,
+    "missing": 22,
+    "review": 0,
+    "crossLayer": 0
+  }
+}

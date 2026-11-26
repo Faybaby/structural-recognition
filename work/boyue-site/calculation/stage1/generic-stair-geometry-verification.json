@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "transformedRecognitionCases": 18,
+  "withoutDrawing": 9,
+  "rotations": [
+    0,
+    33,
+    90
+  ],
+  "lengths": [
+    1800,
+    2600,
+    5300
+  ],
+  "renamedProjects": true,
+  "translation": true,
+  "missingStairDoesNotMatch": true,
+  "physicalGapIsNotBridged": true,
+  "realHeightStepNotMerged": true,
+  "inputImmutable": true,
+  "idempotent": true,
+  "noProjectSelectors": true
+}

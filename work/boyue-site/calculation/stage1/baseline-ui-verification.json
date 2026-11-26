@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "modelDataUnchanged": true,
+  "dataSHA256": "2f9d990f06a186d8c974770f81bd4c71be05e8109b8c23f447f243045723b2dd",
+  "baselineBeforeFloorStep": true,
+  "nativeUIObserved": [
+    "整楼X/Y/方向角输入并保存",
+    "刷新后保留设置",
+    "单块楼面继承整楼基准",
+    "单块楼面独立修改",
+    "整楼修改保留独立楼面覆盖",
+    "恢复继承",
+    "撤销上次保存",
+    "平面点选并吸附角点",
+    "拖动粉色BP修改草稿",
+    "放弃未保存修改",
+    "三维楼面选点回填平面坐标",
+    "三层同位BP三维标记",
+    "基准备份下载触发"
+  ],
+  "supportCalculation": "not-started",
+  "storage": "当前浏览器localStorage，可导入导出；不宣称跨设备云同步"
+}

@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "classificationChanges": [
+    "even-R017",
+    "even-R018",
+    "even-R024",
+    "even-R025",
+    "even-R033",
+    "even-R034",
+    "even-R040",
+    "even-R041",
+    "even-R071",
+    "even-R117",
+    "even-R118",
+    "odd-R011",
+    "odd-R017",
+    "odd-R018",
+    "odd-R022",
+    "odd-R028",
+    "odd-R029",
+    "odd-R030",
+    "odd-R054",
+    "odd-R057",
+    "odd-R130"
+  ],
+  "unchanged": [
+    "Native mesh triangles",
+    "All region boundaries and holes",
+    "DWG source handles",
+    "Local native dimensions",
+    "Original slabs outside reviewed targets",
+    "Three-layer placement"
+  ],
+  "uiObserved": {
+    "source": "Codex in-app browser local preview",
+    "selected": "L1 / even-R117",
+    "category": "梁下区域",
+    "nativeHeightMM": 700,
+    "evidence": "DT-板边线 F2CF + 用户确认规则",
+    "visibleColor": "orange"
+  }
+}

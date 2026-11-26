@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "nativeNearestLandingVerified": 476,
+  "noNativeIntersectionVerified": 188,
+  "crossLayerVerified": 44,
+  "maxHeightErrorMm": 4.547473508864641e-13,
+  "method": "Independent exact STEP solid downward ray intersections; no display gaps or fixed story-height substitution",
+  "snapshot": "existing loaded original STEP geometry"
+}

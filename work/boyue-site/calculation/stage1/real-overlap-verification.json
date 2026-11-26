@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "rule": "both native yang at overlap and actual beam area overlap",
+  "shapeInferenceDisabled": true,
+  "restoredExamples": [
+    "even-R007",
+    "even-R157"
+  ],
+  "auditedSlabs": 101,
+  "qualifiedCarves": 0,
+  "tests": [
+    "overlap+yang passes",
+    "overlap only rejects",
+    "edge contact rejects",
+    "yang outside overlap rejects",
+    "shape only rejects",
+    "native beam source required",
+    "unqualified slab geometry unchanged"
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "passed": true,
+  "summary": {
+    "beams": 253,
+    "beamGroups": 115,
+    "exemptGroups": 0,
+    "exemptParts": 34,
+    "passedGroups": 103,
+    "partialGroups": 12,
+    "pendingGroups": 0,
+    "passed": 253,
+    "pending": 0,
+    "zero": 70,
+    "uniqueModelPoints": 415,
+    "junctionPoints": 23,
+    "junctionModulusExceptionPoints": 15,
+    "pendingJunctions": 0,
+    "excludedJunctions": 70,
+    "pendingRegions": 12
+  },
+  "landings": {
+    "total": 830,
+    "found": 443,
+    "missing": 179,
+    "review": 208,
+    "crossLayer": 49
+  },
+  "review": {
+    "source": "(修正版)铂悦府6号_3F_支撑布置及计算公式_20261118.dwg",
+    "sha256": "83bbdb0bb7bfb3ac5d50855293943dc289cd6c4c0941caff64ee9923f30f1dc6",
+    "audit": [
+      {
+        "rule": "continuous-centreline",
+        "routes": [
+          "even/PB020/R01/M01",
+          "even/PB020/R01/M02"
+        ],
+        "result": "even/PB020/R01/M01",
+        "length": 4100
+      },
+      {
+        "rule": "continuous-centreline",
+        "routes": [
+          "even/PB023/R02/M01",
+          "even/PB023/R02/M02"
+        ],
+        "result": "even/PB023/R02/M01",
+        "length": 3400
+      },
+      {
+        "rule": "continuous-centreline",
+        "routes": [
+          "even/PB028/R01/M01",
+          "even/PB028/R01/M02"
+        ],
+        "result": "even/PB028/R01/M01",
+        "length": 3400
+      },
+      {
+        "rule": "continuous-centreline",
+        "routes": [
+          "even/PB030/R02/M01",
+          "even/PB030/R02/M02"
+        ],
+        "result": "even/PB030/R02/M01",
+        "length": 4100
+      },
+      {
+        "rule": "continuous-centreline",
+        "routes": [
+          "odd/PB016/R01/M01",
+          "odd/PB016/R01/M02"
+        ],
+        "result": "odd/PB016/R01/M01",
+        "length": 4100
+      },
+      {
+        "rule": "continuous-centreline",
+        "routes": [
+          "odd/PB027/R01/M01",
+          "odd/PB027/R01/M02"
+        ],
+        "result": "odd/PB027/R01/M01",
+        "length": 3400
+      },
+      {
+        "rule": "continuous-centreline",
+        "routes": [
+          "odd/PB033/R01/M01",
+          "odd/PB033/R01/M02"
+        ],
+        "result": "odd/PB033/R01/M01",
+        "length": 3400
+      },
+      {
+        "rule": "continuous-centreline",
+        "routes": [
+          "odd/PB044/R02/M01",
+          "odd/PB044/R02/M02"
+        ],
+        "result": "odd/PB044/R02/M01",
+        "length": 4100
+      },
+      {
+        "rule": "native-verified-user-axis",
+        "result": "even/PB003/CAD18-A01",
+        "length": 4025
+      },
+      {
+        "rule": "equal-native-mirror-axis",
+        "source": "even/PB003/R04/P01",
+        "result": "even/PB002/MIRROR-P01",
+        "replaced": [
+          "even/PB002/R01/P03"
+        ],
+        "mirrorX": 18200
+      },
+      {
+        "rule": "equal-native-mirror-axis",
+        "source": "even/PB003/R05",
+        "result": "even/PB002/MIRROR-R05",
+        "replaced": [
+          "even/PB002/R04"
+        ],
+        "mirrorX": 18200
+      },
+      {
+        "rule": "equal-native-mirror-axis",
+        "source": "even/PB003/CAD-A01",
+        "result": "even/PB002/MIRROR-CAD-A01",
+        "replaced": [],
+        "mirrorX": 18200
+      },
+      {
+        "rule": "equal-native-mirror-axis",
+        "source": "even/PB003/CAD-A02",
+        "result": "even/PB002/MIRROR-CAD-A02",
+        "replaced": [],
+        "mirrorX": 18200
+      },
+      {
+        "rule": "equal-native-mirror-axis",
+        "source": "even/PB003/CAD-D01",
+        "result": "even/PB002/MIRROR-CAD-D01",
+        "replaced": [],
+        "mirrorX": 18200
+      },
+      {
+        "rule": "equal-native-mirror-axis",
+        "source": "even/PB003/CAD18-A01",
+        "result": "even/PB002/MIRROR-CAD18-A01",
+        "replaced": [],
+        "mirrorX": 18200
+      }
+    ],
+    "confirmedClarifications": [
+      "200×700/板厚150按原表G12=1100，不采纳图中文字1200",
+      "保留高差<100、免放不参与；同一接头去重",
+      "斜梁按本次图示端点确认独立基准",
+      "斜梁继续按尽量均分自动计算，不固定图示600mm"
+    ],
+    "ruleSummary": [
+      "板厚未知或超出100～250，按150查表，保留原读数",
+      "同宽同高连续中心线跨辅助侧边分割按整根GTT",
+      "已有真实交点替代该接头阳线端点，不重复放置",
+      "同高GL与普通梁共同判定交点",
+      "普通梁端距达到XX−100，即使GTT<XX仍补点",
+      "楼梯梁完整计算、优先居中，端距>1300继续居中补点",
+      "所有中心线先求交点，同一实体接头去重；保留高差及免放判定",
+      "斜梁采用修正版已确认的独立基准",
+      "相同结构使用同一规则；补充轴线须整段位于真实三维梁面"
+    ],
+    "supersededRules": [
+      "指定梁号／坐标的楼梯轴线覆盖已由通用几何识别替代"
+    ]
+  },
+  "sourceAndFloorAndGLUnchanged": true,
+  "duplicatePhysicalPoints": 0,
+  "diagonalAutoCentered": [
+    650,
+    687.398001279731
+  ],
+  "originalIndex200x700x150": {
+    "width": 200,
+    "height": 700,
+    "thickness": 150,
+    "storyHeight": 3000,
+    "spacing": 1100,
+    "cell": "G12"
+  }
+}

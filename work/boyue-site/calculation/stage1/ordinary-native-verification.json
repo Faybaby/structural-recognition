@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "upwardReceivingFacesOnly": true,
+  "mismatches": [],
+  "nativeOrdinaryFacePointReferences": 455,
+  "nearestNativeLandings": 651,
+  "noIntersectionVerified": 179,
+  "maxHeightErrorMm": 4.547473508864641e-13,
+  "indexSource": "original XLSX 3000 sheet exact cells",
+  "geometrySnapshot": "loaded original STEP snapshot, unchanged"
+}

@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "summary": {
+    "floors": 93,
+    "passed": 75,
+    "exempt": 18,
+    "pending": 0,
+    "uniqueModelPoints": 332
+  },
+  "threshold": "physical narrow side < min(Sx,Sy)-100; equality calculates",
+  "connectivity": "500mm strips inclusive; 501mm bridge remains connected",
+  "examples": [
+    {
+      "id": "odd/odd-R159",
+      "status": "passed",
+      "points": 2,
+      "threshold": 1200,
+      "connected": false
+    },
+    {
+      "id": "odd/odd-R160",
+      "status": "passed",
+      "points": 2,
+      "threshold": 1200,
+      "connected": false
+    },
+    {
+      "id": "odd/odd-R148",
+      "status": "passed",
+      "points": 6,
+      "threshold": 1200,
+      "connected": true,
+      "excludedStrips": [
+        {
+          "name": "洞口左侧窄条",
+          "gap": 500,
+          "bounds": [
+            2300,
+            10150,
+            2700,
+            11350
+          ]
+        }
+      ]
+    },
+    {
+      "id": "odd/odd-R145",
+      "status": "passed",
+      "points": 6,
+      "threshold": 1200,
+      "connected": false,
+      "parts": [
+        {
+          "name": "洞口左侧",
+          "dimensions": [
+            1400,
+            1400
+          ]
+        },
+        {
+          "name": "洞口右侧",
+          "dimensions": [
+            1600,
+            1400
+          ]
+        }
+      ],
+      "excludedStrips": [
+        {
+          "name": "洞口下侧窄条",
+          "gap": 200,
+          "bounds": [
+            20900,
+            7500,
+            22100,
+            7600
+          ]
+        },
+        {
+          "name": "洞口上侧窄条",
+          "gap": 200,
+          "bounds": [
+            20900,
+            8800,
+            22100,
+            8900
+          ]
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "1290>=1200 re-enters calculation",
+    "single connected floor reuses perimeter axes without duplicate nearby grid",
+    "ordinary points retain 500mm clearance",
+    "500 and 501 topology boundary",
+    "both saved baseline examples produce identical world points"
+  ]
+}

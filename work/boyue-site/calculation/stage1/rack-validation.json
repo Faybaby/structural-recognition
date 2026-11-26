@@ -1,0 +1,176 @@
+{
+  "date": "2026-11-19",
+  "baseline": {
+    "origin": [
+      8600,
+      4100
+    ],
+    "angleDeg": 0
+  },
+  "originalPreserved": true,
+  "noAdditionalPoles": true,
+  "fixedTableSpacingPreserved": true,
+  "lockedJunctionAndYangEndsUnchanged": true,
+  "cases": {
+    "off": {
+      "originalPositions": 1582,
+      "alignedPositions": 1582,
+      "addedPoles": 0,
+      "moved": 0,
+      "high": 93,
+      "formed": 0,
+      "partial": 16,
+      "isolated": 77,
+      "poles": 95,
+      "rods": 31,
+      "cells": 0,
+      "cancelled": 4,
+      "sizes": [
+        {
+          "size": 900,
+          "count": 31
+        },
+        {
+          "size": 600,
+          "count": 0
+        },
+        {
+          "size": 300,
+          "count": 0
+        }
+      ],
+      "attempts": 0,
+      "collisionChecks": 101,
+      "originalRods": 31,
+      "originalCells": 0,
+      "verticalPassed": 0,
+      "verticalPending": 0
+    },
+    "leap": {
+      "originalPositions": 1582,
+      "alignedPositions": 1574,
+      "addedPoles": 0,
+      "moved": 68,
+      "high": 93,
+      "formed": 0,
+      "partial": 20,
+      "isolated": 73,
+      "poles": 99,
+      "rods": 46,
+      "cells": 0,
+      "cancelled": 7,
+      "sizes": [
+        {
+          "size": 900,
+          "count": 36
+        },
+        {
+          "size": 600,
+          "count": 10
+        },
+        {
+          "size": 300,
+          "count": 0
+        }
+      ],
+      "attempts": 1552,
+      "collisionChecks": 308,
+      "originalRods": 31,
+      "originalCells": 0,
+      "verticalPassed": 0,
+      "verticalPending": 0
+    },
+    "vertical": {
+      "originalPositions": 1582,
+      "alignedPositions": 1582,
+      "addedPoles": 0,
+      "moved": 32,
+      "high": 93,
+      "formed": 0,
+      "partial": 16,
+      "isolated": 77,
+      "poles": 95,
+      "rods": 31,
+      "cells": 0,
+      "cancelled": 6,
+      "sizes": [
+        {
+          "size": 900,
+          "count": 31
+        },
+        {
+          "size": 600,
+          "count": 0
+        },
+        {
+          "size": 300,
+          "count": 0
+        }
+      ],
+      "attempts": 0,
+      "collisionChecks": 101,
+      "originalRods": 31,
+      "originalCells": 0,
+      "verticalPassed": 93,
+      "verticalPending": 42
+    },
+    "both": {
+      "originalPositions": 1582,
+      "alignedPositions": 1574,
+      "addedPoles": 0,
+      "moved": 100,
+      "high": 93,
+      "formed": 0,
+      "partial": 20,
+      "isolated": 73,
+      "poles": 99,
+      "rods": 46,
+      "cells": 0,
+      "cancelled": 9,
+      "sizes": [
+        {
+          "size": 900,
+          "count": 36
+        },
+        {
+          "size": 600,
+          "count": 10
+        },
+        {
+          "size": 300,
+          "count": 0
+        }
+      ],
+      "attempts": 1190,
+      "collisionChecks": 300,
+      "originalRods": 31,
+      "originalCells": 0,
+      "verticalPassed": 93,
+      "verticalPending": 42
+    }
+  },
+  "native": {
+    "floor": {
+      "passed": true,
+      "upwardReceivingFacesOnly": true,
+      "mismatches": [],
+      "nativeOrdinaryFacePointReferences": 328,
+      "nearestNativeLandings": 470,
+      "noIntersectionVerified": 186,
+      "maxHeightErrorMm": 4.547473508864641e-13,
+      "indexSource": "original XLSX 板下支撑间距 sheet exact cells",
+      "geometrySnapshot": "loaded original STEP snapshot, unchanged"
+    },
+    "ordinary": {
+      "passed": true,
+      "upwardReceivingFacesOnly": true,
+      "mismatches": [],
+      "nativeOrdinaryFacePointReferences": 455,
+      "nearestNativeLandings": 651,
+      "noIntersectionVerified": 179,
+      "maxHeightErrorMm": 4.547473508864641e-13,
+      "indexSource": "original XLSX 3000 sheet exact cells",
+      "geometrySnapshot": "loaded original STEP snapshot, unchanged"
+    }
+  }
+}

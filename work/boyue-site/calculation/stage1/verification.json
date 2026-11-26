@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "liveInputsUnchanged": false,
+  "changedOriginalFiles": [
+    {
+      "file": "20261109B永州铂悦府6#偶数层墙柱（首层进）.SLDPRT",
+      "loadedSha256": "ccff5e3450af608534eef0a7f87791e45ec4331dc29457499039f9b47edfee0d",
+      "currentSha256": "b992e220617ae797b8adb7fa9f13ecaaa93f3c74600e65c63109358df26c18af"
+    }
+  ],
+  "nativeFacePointsVerified": 2714,
+  "checks": [
+    "Loaded source snapshot hash: 20261109铂悦府6#铝模深化底图_t3.dwg",
+    "Loaded source snapshot hash: 20261109B永州铂悦府6#偶数层墙柱（首层进）.SLDPRT",
+    "Loaded source snapshot hash: 20261109B永州铂悦府6#奇数层墙柱.SLDPRT",
+    "Three instances: even / odd / even, native story translation 0 / 3000 / 6000 mm",
+    "even: all region locations and sampled boundaries are on original native faces; all evidence handles exist in fresh DWG",
+    "odd: all region locations and sampled boundaries are on original native faces; all evidence handles exist in fresh DWG",
+    "No support node, spacing table, rod, or GD layout arrays present",
+    "21 reviewed edge/downstand regions use beam calculation category with unchanged exact geometry; 32 instances across even / odd / even",
+    "Inclusive 20mm class links retain original native levels; stair non-beam faces excluded before propagation; 4 real slope strips have 150mm inward width, checked on native B-rep"
+  ],
+  "limits": [
+    "本次基于网页已载入的模型版本修正分类；本地已修改的偶数层文件尚未重新导入",
+    "承托区域识别，不代表型号、间距、固顶中心或数量已计算",
+    "尺寸文字只作为附近候选；未匹配区域单独保留",
+    "叠加层是文件实例，不擅自绑定实际建筑层号"
+  ]
+}

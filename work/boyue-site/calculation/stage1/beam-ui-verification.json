@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "browserActualBaseline": {
+    "schema": "boyue-baselines-v1",
+    "geometryKey": "b51673771c5957b6fd3e649c806b284dca9361e6aa667cc53b86e1ff8d06f93d|even:ccff5e3450af608534eef0a7f87791e45ec4331dc29457499039f9b47edfee0d|odd:a7b6759e48a133bad0b12ec07ec3930bb11a54b38db642b03de775cc9d0c582d",
+    "revision": 1,
+    "updatedAt": "2026-11-12T06:55:22.506Z",
+    "global": {
+      "origin": [
+        8600,
+        4100
+      ],
+      "angleDeg": 0
+    },
+    "locals": {}
+  },
+  "beamSummary": {
+    "beams": 32,
+    "passed": 32,
+    "pending": 0,
+    "zero": 6,
+    "uniqueModelPoints": 44,
+    "endPoints": 38,
+    "interiorPoints": 6
+  },
+  "landings": {
+    "total": 88,
+    "found": 66,
+    "missing": 22,
+    "review": 0,
+    "crossLayer": 0
+  },
+  "csvRows": 88,
+  "csvActualHeightColumn": true,
+  "toggleAndFloorRecalculateExactJsonEqual": true,
+  "exportSha256": "2335eddc4a7d9aecef053f423996d4df01dd4eaf0cdf13d241f7012136c22b41",
+  "nativeAndFloorInputUnchanged": true,
+  "UIchecks": [
+    "楼面默认隐藏，梁结果可单独显示",
+    "楼面显示/隐藏和重算前后梁JSON逐字节一致",
+    "基准改为草稿时梁点位与导出停用，放弃修改后恢复",
+    "GL008显示实体2600、GTT2500、GLL100、H1/H2=1250及2个点",
+    "L3/P002三维显示至L2真实承接线2150mm、阳线头与中间头",
+    "三种端部情况均有真实模型结果，双阴短梁明确为0新增"
+  ]
+}

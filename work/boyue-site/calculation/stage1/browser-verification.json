@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "initial": {
+    "sequence": [
+      "even",
+      "odd",
+      "even"
+    ],
+    "groups": 3,
+    "visible": [
+      true,
+      true,
+      true
+    ],
+    "meshes": 565,
+    "canvas": [
+      1166,
+      620
+    ],
+    "webgl": true,
+    "title": "铂悦府6号 · 三层输入识别",
+    "rows": 20
+  },
+  "fullscreen": {
+    "x": 13,
+    "y": 69,
+    "width": 1514,
+    "height": 954
+  },
+  "errors": [],
+  "checks": [
+    "三层顺序",
+    "单层切换",
+    "区域点选和二维定位",
+    "共同/独有投影",
+    "分离查看",
+    "类型筛选",
+    "底面视角",
+    "大图和Esc",
+    "CSV/JSON/HTML下载",
+    "手机宽度"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "example": "even/PB023",
+  "exampleEnds": "yin/yin on both routes",
+  "rightStepsExplainNativeYin": true,
+  "ordinary": {
+    "beams": 179,
+    "beamGroups": 115,
+    "exemptGroups": 0,
+    "exemptParts": 60,
+    "passedGroups": 103,
+    "partialGroups": 6,
+    "pendingGroups": 6,
+    "passed": 143,
+    "pending": 36,
+    "zero": 28,
+    "uniqueModelPoints": 281,
+    "junctionPoints": 10,
+    "pendingJunctions": 16,
+    "excludedJunctions": 36,
+    "pendingRegions": 0
+  },
+  "landings": {
+    "total": 562,
+    "found": 278,
+    "missing": 96,
+    "review": 188,
+    "crossLayer": 21
+  },
+  "csvRows": 562,
+  "displaySwitchesDoNotChangeExport": true,
+  "browserErrors": [],
+  "numericToleranceMm": 1e-09
+}

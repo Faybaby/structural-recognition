@@ -1,0 +1,132 @@
+{
+  "passed": true,
+  "summary": {
+    "beams": 253,
+    "beamGroups": 115,
+    "exemptGroups": 0,
+    "exemptParts": 34,
+    "passedGroups": 103,
+    "partialGroups": 12,
+    "pendingGroups": 0,
+    "passed": 253,
+    "pending": 0,
+    "zero": 70,
+    "uniqueModelPoints": 415,
+    "junctionPoints": 23,
+    "junctionModulusExceptionPoints": 15,
+    "pendingJunctions": 0,
+    "excludedJunctions": 70,
+    "pendingRegions": 12
+  },
+  "landings": {
+    "total": 830,
+    "found": 443,
+    "missing": 179,
+    "review": 208,
+    "crossLayer": 49
+  },
+  "pb012": {
+    "junction": {
+      "id": "even/J020",
+      "key": "even",
+      "beamIds": [
+        "even/PB012/R01",
+        "even/PB012/C02/JG1"
+      ],
+      "point": [
+        4825,
+        8200
+      ],
+      "heightDifference": 0,
+      "status": "placed",
+      "exemptParticipants": [],
+      "exclusionType": null,
+      "modulusException": "真实梁梁交点优先，允许50mm模数例外",
+      "modulusReview": {
+        "step": 50,
+        "axes": [
+          {
+            "beamId": "even/PB012/R01",
+            "baselineScope": "global",
+            "coordinate": 4100,
+            "nearestGridCoordinate": 4100,
+            "deviation": 0,
+            "onGrid": true
+          },
+          {
+            "beamId": "even/PB012/C02/JG1",
+            "baselineScope": "global",
+            "coordinate": -3775,
+            "nearestGridCoordinate": -3750,
+            "deviation": -25,
+            "onGrid": false
+          }
+        ],
+        "maxDeviation": 25
+      },
+      "reason": "交点50mm模数例外：在真实交点放支撑，不移动交点；其他补点仍按50mm模数",
+      "owner": "even-NATIVE-even-B2-F441",
+      "sourceHeight": 2500,
+      "stations": [
+        2400,
+        425
+      ]
+    },
+    "point": {
+      "id": "even/OP0067",
+      "key": "even",
+      "world": [
+        4825,
+        8200
+      ],
+      "sourceHeight": 2500,
+      "sourceFace": "even-B2-F441",
+      "sourceRegion": "even-NATIVE-even-B2-F441",
+      "ownerBeam": "even/PB012/R01",
+      "origin": "梁梁交点",
+      "axisCoordinate": 4100,
+      "t": 2400,
+      "beamIds": [
+        "even/PB012/R01",
+        "even/PB012/C02/JG1"
+      ],
+      "worldOverride": [
+        4825,
+        8200
+      ],
+      "gll": null,
+      "junction": "even/J020",
+      "modulusException": "真实梁梁交点优先，允许50mm模数例外",
+      "junctionModulusException": true,
+      "modulusReview": {
+        "step": 50,
+        "axes": [
+          {
+            "beamId": "even/PB012/R01",
+            "baselineScope": "global",
+            "coordinate": 4100,
+            "nearestGridCoordinate": 4100,
+            "deviation": 0,
+            "onGrid": true
+          },
+          {
+            "beamId": "even/PB012/C02/JG1",
+            "baselineScope": "global",
+            "coordinate": -3775,
+            "nearestGridCoordinate": -3750,
+            "deviation": -25,
+            "onGrid": false
+          }
+        ],
+        "maxDeviation": 25
+      }
+    },
+    "gtt": [
+      425,
+      1075
+    ]
+  },
+  "otherSpanPointsKeep50mm": true,
+  "exceptionRecords": 32,
+  "exceptionUniquePoints": 15
+}

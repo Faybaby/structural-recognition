@@ -1,0 +1,21 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {calculateLandings,triangleHeight} from '../../stage1/landing-core.js';
+import {calculateFloors} from '../../stage1/floor-core.js';
+const tri=z=>[[0,0,z],[100,0,z],[0,100,z]];
+assert.equal(triangleHeight([20,20],tri(123)),123);
+assert.equal(triangleHeight([90,90],tri(123)),null);
+assert.equal(triangleHeight([25,25],[[0,0,0],[100,0,100],[0,100,100]]),50);
+const data={instances:[{id:'L1',key:'even',order:1,offset:0},{id:'L2',key:'odd',order:2,offset:3000},{id:'L3',key:'even',order:3,offset:6000}],plans:[{key:'even',base:0,zones:[{id:'slab-E',kind:'slab',top:3000,region:[{polygon:[[0,0],[100,0],[0,100]],holes:[]}]}]},{key:'odd',base:0,zones:[{id:'beam-O',kind:'beam',top:3000,region:[{polygon:[[0,0],[100,0],[0,100]],holes:[]}]}]}]};
+const input={source:'test',plans:{even:{faces:[{id:'top-E',triangles:[tri(3000)]}]},odd:{faces:[]}}};
+let result={floors:[{id:'E',key:'even',status:'passed',nodes:[{id:'N',world:[20,20],sourceHeight:2580,sourceFace:'underside'}]}]};
+let r=calculateLandings(result,data,input);assert.equal(r.points[0].status,'missing');const cross=r.points.find(p=>p.layer==='L3');assert.equal(cross.length,5580);assert.equal(cross.landing.layer,'L1');assert(cross.crossLayer);assert.deepEqual(cross.skippedLayers,['L2']);
+input.plans.odd.faces=[{id:'top-O',triangles:[tri(3000)]}];r=calculateLandings(result,data,input);assert.equal(r.points.find(p=>p.layer==='L3').length,2580);assert(!r.points.find(p=>p.layer==='L3').crossLayer);assert.equal(r.points.find(p=>p.layer==='L3').landing.kind,'beam');
+const read=p=>JSON.parse(fs.readFileSync(new URL(p,import.meta.url),'utf8'));
+const actual=read('../../stage1/data.json'),floorInput=read('../../stage1/floor-input.json'),landing=read('../../stage1/landing-input.json');
+const baseline={global:{origin:[8600,4100],angleDeg:0},locals:{},revision:1};
+const out=calculateFloors(floorInput,baseline);out.landings=calculateLandings(out,actual,landing);
+for(const p of out.landings.points){if(p.status==='missing'){assert.equal(p.length,null);assert.equal(p.landing,null);continue;}assert(p.length>0);assert(Math.abs(p.length-(p.startHeight-p.landing.height))<1e-7);assert(p.landing.height<p.startHeight);}
+fs.writeFileSync(new URL('../../../../outputs/楼面支撑_含承接面长度.json',import.meta.url),JSON.stringify({...out,actualBaseline:baseline},null,2));
+const report={passed:true,summary:out.summary,landings:out.landings.summary,crossExamples:out.landings.points.filter(p=>p.crossLayer).slice(0,3),checks:['三角面内外及坡面插值','5580mm跨中间层洞口至下一层','优先最近顶面','无实体不估算','长度不含显示分离距离','实际数据正长度与真实端点标高差']};
+fs.writeFileSync(new URL('./landing-verification.json',import.meta.url),JSON.stringify(report,null,2));console.log(JSON.stringify({passed:true,summary:out.summary,landings:out.landings.summary,crossExamples:report.crossExamples.map(p=>({id:p.id,length:p.length,landing:p.landing.layer}))}));

@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "layers": {
+    "odd": {
+      "nodes": 231,
+      "errors": [],
+      "sourceUnchanged": true,
+      "nativeFacePass": 231,
+      "slabCoveragePending": 0,
+      "reviewRecords": 96,
+      "sha256": "a7b6759e48a133bad0b12ec07ec3930bb11a54b38db642b03de775cc9d0c582d"
+    },
+    "even": {
+      "nodes": 240,
+      "errors": [],
+      "sourceUnchanged": true,
+      "nativeFacePass": 240,
+      "slabCoveragePending": 0,
+      "reviewRecords": 99,
+      "sha256": "ccff5e3450af608534eef0a7f87791e45ec4331dc29457499039f9b47edfee0d"
+    }
+  },
+  "pairCoordinateErrors": 0,
+  "candidateCount": 471,
+  "sharedPairs": 194
+}

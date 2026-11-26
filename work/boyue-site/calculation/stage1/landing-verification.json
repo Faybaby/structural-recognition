@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "summary": {
+    "floors": 93,
+    "passed": 79,
+    "pending": 14,
+    "uniqueModelPoints": 306
+  },
+  "landings": {
+    "total": 612,
+    "found": 435,
+    "missing": 177,
+    "review": 0,
+    "crossLayer": 48
+  },
+  "crossExamples": [
+    {
+      "id": "L3/even/even-R001-P001",
+      "layer": "L3",
+      "floorId": "even/even-R001",
+      "nodeId": "even/even-R001-P001",
+      "world": [
+        29000,
+        700
+      ],
+      "startHeight": 8530,
+      "sourceFace": "even-B2-F10",
+      "status": "found",
+      "length": 5880,
+      "landing": {
+        "height": 2650,
+        "native": 2650,
+        "face": "even-B2-F9",
+        "layer": "L1",
+        "key": "even",
+        "order": 1,
+        "kind": "slab",
+        "region": "even-R001"
+      },
+      "crossLayer": true,
+      "layerDifference": 2,
+      "skippedLayers": [
+        "L2"
+      ],
+      "checks": [
+        {
+          "layer": "L3",
+          "status": "no-surface-below"
+        },
+        {
+          "layer": "L2",
+          "status": "no-surface-below"
+        },
+        {
+          "layer": "L1",
+          "status": "hit"
+        }
+      ],
+      "rule": "从固顶承托位置竖直向下，与已载入原生顶面求最近实际交点；中间层洞口继续向下；无交点不估算",
+      "lengthMeaning": "几何竖向距离，未扣除固顶及底座构造尺寸"
+    },
+    {
+      "id": "L3/even/even-R001-P002",
+      "layer": "L3",
+      "floorId": "even/even-R001",
+      "nodeId": "even/even-R001-P002",
+      "world": [
+        30300,
+        700
+      ],
+      "startHeight": 8530,
+      "sourceFace": "even-B2-F10",
+      "status": "found",
+      "length": 5880,
+      "landing": {
+        "height": 2650,
+        "native": 2650,
+        "face": "even-B2-F9",
+        "layer": "L1",
+        "key": "even",
+        "order": 1,
+        "kind": "slab",
+        "region": "even-R001"
+      },
+      "crossLayer": true,
+      "layerDifference": 2,
+      "skippedLayers": [
+        "L2"
+      ],
+      "checks": [
+        {
+          "layer": "L3",
+          "status": "no-surface-below"
+        },
+        {
+          "layer": "L2",
+          "status": "no-surface-below"
+        },
+        {
+          "layer": "L1",
+          "status": "hit"
+        }
+      ],
+      "rule": "从固顶承托位置竖直向下，与已载入原生顶面求最近实际交点；中间层洞口继续向下；无交点不估算",
+      "lengthMeaning": "几何竖向距离，未扣除固顶及底座构造尺寸"
+    },
+    {
+      "id": "L3/even/even-R002-P001",
+      "layer": "L3",
+      "floorId": "even/even-R002",
+      "nodeId": "even/even-R002-P001",
+      "world": [
+        6050,
+        700
+      ],
+      "startHeight": 8530,
+      "sourceFace": "even-B2-F16",
+      "status": "found",
+      "length": 5880,
+      "landing": {
+        "height": 2650,
+        "native": 2650,
+        "face": "even-B2-F15",
+        "layer": "L1",
+        "key": "even",
+        "order": 1,
+        "kind": "slab",
+        "region": "even-R002"
+      },
+      "crossLayer": true,
+      "layerDifference": 2,
+      "skippedLayers": [
+        "L2"
+      ],
+      "checks": [
+        {
+          "layer": "L3",
+          "status": "no-surface-below"
+        },
+        {
+          "layer": "L2",
+          "status": "no-surface-below"
+        },
+        {
+          "layer": "L1",
+          "status": "hit"
+        }
+      ],
+      "rule": "从固顶承托位置竖直向下，与已载入原生顶面求最近实际交点；中间层洞口继续向下；无交点不估算",
+      "lengthMeaning": "几何竖向距离，未扣除固顶及底座构造尺寸"
+    }
+  ],
+  "checks": [
+    "三角面内外及坡面插值",
+    "5580mm跨中间层洞口至下一层",
+    "优先最近顶面",
+    "无实体不估算",
+    "长度不含显示分离距离",
+    "实际数据正长度与真实端点标高差"
+  ]
+}

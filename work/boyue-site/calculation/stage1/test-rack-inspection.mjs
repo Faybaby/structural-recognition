@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+import path from 'node:path';
+import * as THREE from '../../model3d/vendor/three.module.js';
+import {findUniformAudit,uniformDiagram,UNIFORM_COLORS} from '../../stage1/rack-inspection.js';
+import {createRackThree} from '../../stage1/rack-three.js';
+import {regionContains} from '../../stage1/floor-core.js';
+const file=process.argv[2];if(!file)throw Error('Pass the real 1200mm result JSON');
+const r=JSON.parse(fs.readFileSync(file,'utf8')),data=JSON.parse(fs.readFileSync(new URL('../../stage1/data.json',import.meta.url),'utf8'));
+const a=findUniformAudit(r,{kind:'floor',owner:'even/even-R156',layer:'L3'});
+assert(a,'the exact slab in the user screenshot must route to the aligned calculation');
+assert.equal(a.pitch,1200);assert.equal(a.originalIndex.sx,1300);
+const row=r.aligned.floor.floors.find(f=>f.id===a.id&&f.layer==='L3');
+assert.equal(row.index.sx,1200);assert.equal(row.index.sy,1200);
+assert.equal(findUniformAudit(r,{kind:'floor',owner:a.id,layer:'L1'}),null,'same model in another layer must keep its original result');
+assert.equal(findUniformAudit({...r,config:{uniform:false}},{kind:'floor',owner:a.id,layer:'L3'}),null);
+assert.equal(findUniformAudit(r,{key:'even',regionId:row.memberIds[0],layer:'L3'}),a,'native slab picking must resolve the current calculation');
+const svg=uniformDiagram(a,r);assert(svg.includes('S＝1200mm'));assert(!svg.includes('1300'),'the current schematic must not reuse old 1300mm dimensions');
+const before=JSON.stringify(r);
+const view=createRackThree({THREE,result:r,view:{uniform:true,isolate:false,aligned:true,model:false},data,scope:'L3',centerX:0,centerZ:0,visibleKinds:{floor:true,ordinary:true,gl:true}});
+assert(view.regionMeshes.some(m=>m.userData.rackRegion.id===a.id&&m.material.color.getHex()===UNIFORM_COLORS.floor));
+assert(view.regionMeshes.some(m=>m.userData.rackRegion.kind==='ordinary'&&m.material.color.getHex()===UNIFORM_COLORS.beam));
+assert(view.regionMeshes.every(m=>m.userData.rackRegion.layer==='L3'));
+const dots=view.meshes.flatMap(m=>m.userData.records);assert(dots.length===r.positions.filter(p=>p.uniformAffected&&p.layer==='L3').length,'all new points, including unchanged grid points, must be visible without isolation');
+assert.equal(JSON.stringify(r),before);
+// Exercise the real floor-rendering integration: old 1300 grid/points must be
+// removed only from the adjusted owner, and restored by disabling the mode.
+const source=fs.readFileSync(new URL('../../stage1/main.js',import.meta.url),'utf8'),original=JSON.parse(fs.readFileSync(path.join(path.dirname(file),'original.json'),'utf8'));
+const floorInput=JSON.parse(fs.readFileSync(new URL('../../stage1/floor-input.json',import.meta.url),'utf8'));
+let active=true;const ctx={THREE,scene:new THREE.Scene(),rackUI:{view:()=>({uniform:active,result:r})},rackRenderedSource:null,queueMicrotask(){},updateRackThree(){},updateHud(){},supportGroup:null,supportMeshes:[],floorResult:original.floor,floorUI:{getFloor:id=>floorInput.floors.find(f=>f.id===id)},scopeVisible:i=>i.id==='L3',state:{scope:'L3',gap:0},data,plans:Object.fromEntries(data.plans.map(p=>[p.key,p])),regionContains,centerX:0,centerZ:0,dirty:false,$:id=>({checked:id!=='showSupportLengths'})};
+vm.createContext(ctx);vm.runInContext(source.slice(source.indexOf('function adjustedOwner('),source.indexOf('function showLandingPoint(')).replace('let rackRenderedSource=null;',''),ctx);
+ctx.updateFloorThree();assert(!ctx.supportMeshes.flatMap(m=>m.userData.records).some(p=>p.result.id===a.id),'old R156 1300mm support points must not remain beneath the new 1200mm drawing');
+active=false;ctx.updateFloorThree();assert(ctx.supportMeshes.flatMap(m=>m.userData.records).some(p=>p.result.id===a.id),'switching off must restore the original R156 layout');
+console.log('PASS: screenshot slab R156 routes to 1200mm actual-coordinate diagram, original 1300 retained only for comparison, per-layer face picking, distinct adjusted slab/beam colors, complete new point display');

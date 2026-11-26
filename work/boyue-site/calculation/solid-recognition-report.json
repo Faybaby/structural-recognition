@@ -1,0 +1,50 @@
+{
+  "odd": {
+    "bodies": 25,
+    "physicalBodies": 1,
+    "faces": 281,
+    "slabs": 45,
+    "beams": 111,
+    "features": 160,
+    "nodes": 231,
+    "beamNodes": 79,
+    "slabNodes": 152,
+    "issues": 96,
+    "nativeFacePass": 231,
+    "boundaryMaxRelativeAreaError": 2.3376486589610626e-06,
+    "inventory": {
+      "GD": 152,
+      "GD100X350": 42,
+      "GD100X200": 34,
+      "GD100X50": 1,
+      "GD100X450": 2
+    },
+    "sharedNodes": 194,
+    "independentNodes": 37
+  },
+  "even": {
+    "bodies": 28,
+    "physicalBodies": 2,
+    "faces": 284,
+    "slabs": 48,
+    "beams": 108,
+    "features": 160,
+    "nodes": 240,
+    "beamNodes": 92,
+    "slabNodes": 148,
+    "issues": 99,
+    "nativeFacePass": 240,
+    "boundaryMaxRelativeAreaError": 2.33764865855365e-06,
+    "inventory": {
+      "GD": 148,
+      "GD100X350": 40,
+      "GD100X200": 35,
+      "GD100X50": 1,
+      "GD100X400": 8,
+      "GD100X150": 2,
+      "GD100X250": 6
+    },
+    "sharedNodes": 194,
+    "independentNodes": 46
+  }
+}

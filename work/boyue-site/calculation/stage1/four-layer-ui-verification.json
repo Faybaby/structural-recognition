@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "browser": "IAB localhost",
+  "layerOrder": [
+    "even",
+    "odd",
+    "even",
+    "odd"
+  ],
+  "baseline": {
+    "origin": [
+      8600,
+      4100
+    ],
+    "angleDeg": 0
+  },
+  "observed": [
+    "Saved baseline automatically retained",
+    "612 points / 435 actual landings / 48 cross-layer / 177 missing",
+    "Fourth-layer only control shows153points/7pending",
+    "Cross-layer button selects fourth-layer L4 toL2 /11830-5950=5880 /skipL3",
+    "Four-layer controls/cards and purple endpoints/label rendered",
+    "Downloaded JSON verified four instances and612point landing records"
+  ],
+  "exportFilename": "铂悦府6号_楼面支撑计算 (1).json"
+}

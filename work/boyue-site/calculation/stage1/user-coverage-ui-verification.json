@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "browser": "IAB localhost",
+  "baseline": {
+    "origin": [
+      8600,
+      4100
+    ],
+    "angleDeg": 0
+  },
+  "summary": {
+    "floors": 93,
+    "passed": 69,
+    "exempt": 24,
+    "pending": 0,
+    "uniqueModelPoints": 320
+  },
+  "landings": {
+    "total": 640,
+    "found": 458,
+    "missing": 182,
+    "review": 0,
+    "crossLayer": 44
+  },
+  "observed": [
+    "odd-R151窄面免放状态与0点，免放筛选不混入待处理",
+    "odd-R145洞周4点＋左右各1点，独立分区H均≥500",
+    "图上橙色洞周点与蓝色普通点分别显示",
+    "井字参考线按两侧各自相位绘制，不穿洞生成固顶",
+    "四层640点、48个免放实例，承接长度同步计算",
+    "JSON实际下载验证24个免放分区、odd-R145六点",
+    "CSV实际下载验证640行、R145六点中四个洞周边距例外"
+  ],
+  "geometrySHA256": "b23718d9d970428a412d2d6b55b600c992cf458a7640733103ff41fed3dc1c1c"
+}

@@ -1,0 +1,6 @@
+from pathlib import Path
+p=Path(__file__).parent/'app.js';s=p.read_text(encoding='utf-8');start=s.index('function exportCsv()');a=s.index("if(kind==='endSupports'){",start);b=s.index("else if(kind==='arcIntervals')",a)
+s=s[:a]+'''if(kind==='endSupports'){head=['矩形编号','层别','关联梁','GL标注','GL来源','GL第二尺寸','相邻梁高','比较','实际矩形宽','实际矩形长','中心X','中心Y','中心误差','支撑编号','GD型号','距洞口中心距','中心距150通过','边界来源','识别依据'];data=rows().map(o=>[o.id,o.layer,o.owner,o.gl,o.glSource,o.glDimension,o.beamDepth,o.comparison,o.rectWidth,o.rectLength,...o.at,o.centerError,o.node,o.model,o.openingDistance,o.clearancePass,(o.boundarySources||[]).join('|'),o.recognition]);}'''+s[b:]
+a=s.index("else if(kind==='slabs'){",s.index('function exportCsv()'));b=s.index('else{head=',a)
+s=s[:a]+'''else if(kind==='slabs'){head=['编号','层别','板厚','索引来源','索引X','索引Y','扣减','Sx','Sy','净跨度X','净跨度Y','窄跨免加','规则说明','基本nx','基本ny','实际支撑数','参考中心X','参考中心Y','避洞移位X','避洞移位Y','最近洞口中心距','洞口避让要求','对应待复核'];data=rows().map(s=>{const q=s.layout;return [s.id,s.layer,s.thickness,s.cell,s.indexX,s.indexY,100,s.limitX,s.limitY,q.spanX,q.spanY,q.exempt,q.reason,q.nx0,q.ny0,q.nodeCount,...q.center,...q.shift,q.actualMinimumOpeningDistance,150,q.pendingAlignment];});}'''+s[b:]
+p.write_text(s,encoding='utf-8')

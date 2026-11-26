@@ -1,0 +1,281 @@
+{
+  "id": "USER-EDGE-DOWNSTAND-AS-BEAM-20261111",
+  "source": "用户圈图说明：此类结构按照梁去计算",
+  "sourceImage": "codex-clipboard-17bc5d04-5691-466f-b76a-e779b787b15a.png",
+  "reason": "此类边缘细长下挂构件按梁识别与计算；二维板边线图层不决定其楼面类别。",
+  "scope": "本次模型中已核对的同类边缘下挂构件，锁定原生面、边界及二维来源；不按长条外形批量修改普通楼板。",
+  "drawingSha256": "b51673771c5957b6fd3e649c806b284dca9361e6aa667cc53b86e1ff8d06f93d",
+  "modelHashes": {
+    "even": "ccff5e3450af608534eef0a7f87791e45ec4331dc29457499039f9b47edfee0d",
+    "odd": "a7b6759e48a133bad0b12ec07ec3930bb11a54b38db642b03de775cc9d0c582d"
+  },
+  "targets": [
+    {
+      "plan": "even",
+      "id": "even-R017",
+      "face": "even-B2-F49",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F088",
+        "F089",
+        "F08A",
+        "F08B",
+        "F08C",
+        "F08D",
+        "F08E",
+        "F08F"
+      ],
+      "regionSha256": "313098f5d56ff5b55419fa0ff0562c12222eb464e71c2c537cb8e0c4f91e9421"
+    },
+    {
+      "plan": "even",
+      "id": "even-R018",
+      "face": "even-B2-F49",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F090"
+      ],
+      "regionSha256": "e287b555afcefd3e0814f62898c171448d70e369f97dd697823ad8d4c9069b35"
+    },
+    {
+      "plan": "even",
+      "id": "even-R024",
+      "face": "even-B2-F58",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F094"
+      ],
+      "regionSha256": "4f5da3d02ad32228160de5997ecc164b85f2f78836303a99e93fc121ac1d3058"
+    },
+    {
+      "plan": "even",
+      "id": "even-R025",
+      "face": "even-B2-F58",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F096",
+        "F097",
+        "F098",
+        "F099"
+      ],
+      "regionSha256": "b539226ee62dfe278d57b82a6716b9c610d2f953796ed458290afc946ad6b74a"
+    },
+    {
+      "plan": "even",
+      "id": "even-R033",
+      "face": "even-B2-F62",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F019"
+      ],
+      "regionSha256": "4027efffaec20aec6ec60e3d99a7b3bd81be31368c1d0d4b6eb2686e96314d78"
+    },
+    {
+      "plan": "even",
+      "id": "even-R034",
+      "face": "even-B2-F62",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F000",
+        "F001",
+        "F007",
+        "F00D",
+        "F012",
+        "F014",
+        "F017",
+        "F018"
+      ],
+      "regionSha256": "99b32dc77466bfeb145531608f1de9bc0ad9875123f6937451426504b29f2fc9"
+    },
+    {
+      "plan": "even",
+      "id": "even-R040",
+      "face": "even-B2-F71",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F068",
+        "F069",
+        "F06C",
+        "F07E"
+      ],
+      "regionSha256": "6e16a682e013fb2119e60c3682e21fe56a3b042cedb040cd25946962a2ed57ec"
+    },
+    {
+      "plan": "even",
+      "id": "even-R041",
+      "face": "even-B2-F71",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F059"
+      ],
+      "regionSha256": "725adb9b79a466511ce784f23376bfec6f5c25d99d689a308f5447065bd442cc"
+    },
+    {
+      "plan": "even",
+      "id": "even-R071",
+      "face": "even-B2-F533",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F07F"
+      ],
+      "regionSha256": "ecc972f423ffdfc3ce8b0a1c6def3c9c87a9d5f3b699ac9f173448b816e99f1c"
+    },
+    {
+      "plan": "even",
+      "id": "even-R117",
+      "face": "even-B2-F996",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F2CF"
+      ],
+      "regionSha256": "53d9ac448f42a0f23d41e573e82212051fe3ab8a9d6ad288b8e1ea47c851b8fe"
+    },
+    {
+      "plan": "even",
+      "id": "even-R118",
+      "face": "even-B2-F998",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F2D1"
+      ],
+      "regionSha256": "fe3804f057fccade6ab172166d52e297b99a9a7e0dd0a1d3ea570bb019f38011"
+    },
+    {
+      "plan": "odd",
+      "id": "odd-R011",
+      "face": "odd-B1-F33",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F117",
+        "F119",
+        "F19E",
+        "F19F"
+      ],
+      "regionSha256": "e24feab176274c745ba778092d8c29327e2d80c20c1e4e09ad1767ecf557a12e"
+    },
+    {
+      "plan": "odd",
+      "id": "odd-R017",
+      "face": "odd-B1-F42",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F122"
+      ],
+      "regionSha256": "4f5da3d02ad32228160de5997ecc164b85f2f78836303a99e93fc121ac1d3058"
+    },
+    {
+      "plan": "odd",
+      "id": "odd-R018",
+      "face": "odd-B1-F42",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F124",
+        "F125",
+        "F126",
+        "F127"
+      ],
+      "regionSha256": "b539226ee62dfe278d57b82a6716b9c610d2f953796ed458290afc946ad6b74a"
+    },
+    {
+      "plan": "odd",
+      "id": "odd-R022",
+      "face": "odd-B1-F46",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F102",
+        "F103",
+        "F104",
+        "F19D"
+      ],
+      "regionSha256": "7f05e7c9b4df423c495374b00eca53d84954f95e05233f76d4cfded4f431cbb8"
+    },
+    {
+      "plan": "odd",
+      "id": "odd-R028",
+      "face": "odd-B1-F55",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F111",
+        "F112",
+        "F113",
+        "F114"
+      ],
+      "regionSha256": "6e16a682e013fb2119e60c3682e21fe56a3b042cedb040cd25946962a2ed57ec"
+    },
+    {
+      "plan": "odd",
+      "id": "odd-R029",
+      "face": "odd-B1-F55",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F10F"
+      ],
+      "regionSha256": "725adb9b79a466511ce784f23376bfec6f5c25d99d689a308f5447065bd442cc"
+    },
+    {
+      "plan": "odd",
+      "id": "odd-R030",
+      "face": "odd-B1-F255",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F2CB"
+      ],
+      "regionSha256": "53d9ac448f42a0f23d41e573e82212051fe3ab8a9d6ad288b8e1ea47c851b8fe"
+    },
+    {
+      "plan": "odd",
+      "id": "odd-R054",
+      "face": "odd-B1-F465",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F109",
+        "F173",
+        "F177"
+      ],
+      "regionSha256": "015a0c7fef19380de3112e00ce55a1a9c75b897dcbbbb239216a9182743b3352"
+    },
+    {
+      "plan": "odd",
+      "id": "odd-R057",
+      "face": "odd-B1-F466",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F195",
+        "F196",
+        "F197"
+      ],
+      "regionSha256": "05f296a5783aec4001c2a4239fe1a5f71455f2583aec2df90a8519e0d2beae9b"
+    },
+    {
+      "plan": "odd",
+      "id": "odd-R130",
+      "face": "odd-B1-F1328",
+      "bottom": 2450.0,
+      "top": 3150.0,
+      "drawingSources": [
+        "F2CD"
+      ],
+      "regionSha256": "fe3804f057fccade6ab172166d52e297b99a9a7e0dd0a1d3ea570bb019f38011"
+    }
+  ]
+}

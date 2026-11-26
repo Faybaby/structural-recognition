@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "browser": "IAB localhost",
+  "baseline": {
+    "global": {
+      "origin": [
+        8600,
+        4100
+      ],
+      "angleDeg": 0
+    },
+    "locals": {}
+  },
+  "result": {
+    "passedUniqueFloors": 77,
+    "pendingUniqueFloors": 16,
+    "threeLayerPoints": [
+      146,
+      146,
+      146
+    ],
+    "totalPassedPoints": 438,
+    "pendingLayerInstances": 24
+  },
+  "observed": [
+    "Automatic worker calculation after saving/inheriting baseline",
+    "Original D3/D5/D8 spacing and 7 calculation steps",
+    "50mm phase and strict H bounds in floor detail",
+    "Pending filter shows actual reasons",
+    "Unsaved baseline changes hide results and disable CSV/JSON",
+    "Cancel unsaved changes restores same438 points and exports",
+    "3D single-layer HUD146points/8pending",
+    "Navy support point spheres rendered above transparent regions",
+    "Point click selects L1/even/even-R159-P017 and showsSx1300/Sy1200",
+    "All three-layer counts displayed separately"
+  ],
+  "unchangedGeometrySHA256": "2f9d990f06a186d8c974770f81bd4c71be05e8109b8c23f447f243045723b2dd",
+  "exportVerification": "CSV/JSON controls enabled and source serialization reviewed; browser downloaded file not independently inspected"
+}
